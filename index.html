@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Raj. Vishnu Kumar Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+
+
+
+
+<!-- ============================================================
+     CSS — Global Variables & Reset
+     ============================================================ -->
+<style>
+:root {
+    --clr-bg:          #0d0d0d;
+    --clr-surface:     #161616;
+    --clr-surface-alt: #1e1e1e;
+    --clr-border:      rgba(255,255,255,0.08);
+    --clr-gold:        #c9a96e;
+    --clr-gold-light:  #e8cfa0;
+    --clr-text:        #f0ece4;
+    --clr-muted:       #888070;
+    --clr-close-bg:    #c0392b;
+    --clr-close-hover: #a93226;
+    --font-display:    'Cormorant Garamond', Georgia, serif;
+    --font-body:       'Jost', sans-serif;
+    --radius-card:     4px;
+    --radius-btn:      3px;
+    --transition:      0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --header-h:        300px;
+    --logo-size:       48px;
+  }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0;}
+html { font-size: 16px; scroll-behavior: smooth;}
+body { background: var(--clr-bg); color: var(--clr-text); font-family: var(--font-body); font-weight: 300; line-height: 1.7; min-height: 100vh; overflow-x: hidden;}
+img { display: block; width: 100%; height: 100%; object-fit: contain;}
+a { color: inherit; text-decoration: none;}
+ul { list-style: none;}
+</style>
+
+
+
+
+<!-- ============================================================
+     CSS — Top Bar / Logo
+     ============================================================ -->
+<style>
+.top-bar { position: sticky; top: 0; z-index: 900; display: flex; align-items: center; padding: 0 2rem; height: 90px; background: rgba(13, 13, 13, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--clr-border);}
+.logo-wrap { display: flex; align-items: center; gap: 12px; cursor: pointer; user-select: none;}
+.logo-icon { display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative;}
+.logo-icon::before { display: none; }
+.logo-initials { font-family: var(--font-display); font-size: 15px; font-weight: 600; letter-spacing: 0.05em; color: var(--clr-gold); position: relative; z-index: 1;}
+.logo-name { display: flex; flex-direction: column; gap: 1px;}
+.logo-name-main { font-family: var(--font-display); font-size: 25px; font-weight: 700; letter-spacing: 0.12em; color: var(--clr-gold-light); line-height: 1.1; text-transform: uppercase;}
+.logo-name-sub { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 15px; letter-spacing: 0.22em; color: var(--clr-muted); text-transform: uppercase; font-weight: 900;}
+.logo-image { height: 85px;  width: auto; object-fit: contain;}
+</style>
+
+<!-- ============================================================
+     CSS — Hero / Header
+     ============================================================ -->
+<style>
+
+.hero { position: relative; height: var(--header-h); display: flex; align-items: center; justify-content: center; overflow: hidden;}
+.hero-bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=80'); background-size: cover; background-position: center 40%; filter: blur(4px) brightness(0.35); transform: scale(1.06);}
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient( 180deg, rgba(13,13,13,0.3) 0%, rgba(13,13,13,0.15) 45%,rgba(13,13,13,0.7) 100%);}
+.hero-content { position: relative; z-index: 1; text-align: center; padding: 0 2rem;}
+.hero-eyebrow { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px; letter-spacing: 0.35em; color: var(--clr-gold); text-transform: uppercase; font-weight: 600; margin-bottom: 18px; opacity: 0;     animation: fadeUp 0.9s 0.2s forwards; }
+.hero-title { font-family: var(--font-display); font-size: 60px; font-weight: 700; letter-spacing: 0.08em; line-height: 1.1;   text-transform: uppercase; color: var(--clr-gold); opacity: 0; animation: fadeUp 0.9s 0.45s forwards;}
+.hero-title span { color: var(--clr-gold-light); font-style: italic; font-weight: 300;}
+.hero-rule { width: 80px; height: 1px; background: var(--clr-gold); margin: 28px auto 22px; opacity: 0; animation: fadeUp 0.9s 0.65s forwards;}
+.hero-sub { font-family: var(--font-body); font-size: 12px; letter-spacing: 0.28em; color: var(--clr-muted); text-transform: uppercase; font-weight: 400; opacity: 0; animation: fadeUp 0.9s 0.8s forwards;}
+
+@keyframes fadeUp {from { opacity: 0; transform: translateY(22px); } to   { opacity: 1; transform: translateY(0); }}
+
+</style>
+
+<!-- ============================================================
+     CSS — Gallery Grid
+     ============================================================ -->
+<style>
+
+.gallery-section { padding: 64px 2rem 80px; max-width: none; margin: 0 auto;}
+.section-label { font-family: var(--font-body); font-size: 9px; letter-spacing: 0.35em; color: var(--clr-gold); text-transform: uppercase; font-weight: 500; margin-bottom: 8px;}
+.section-heading { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 300; letter-spacing: 0.05em; color: var(--clr-text); margin-bottom: 40px;}
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;}
+.gallery-item { aspect-ratio: 4 / 4; overflow: hidden; border-radius: var(--radius-card); cursor: pointer; position: relative; background: var(--clr-surface); border: 1px solid var(--clr-border); transition: transform var(--transition), box-shadow var(--transition);}
+.gallery-item img { transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease; transform-origin: center;}
+.gallery-item:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,169,110,0.2);}
+.gallery-item:hover img { transform: scale(1.06); filter: brightness(0.8);}
+.gallery-item-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0); display: flex; align-items: flex-end; padding: 16px; transition: background var(--transition); pointer-events: none;}
+.gallery-item:hover .gallery-item-overlay { background: rgba(0,0,0,0.4);}
+.gallery-item-caption { font-family: var(--font-display); font-size: 15px; font-style: italic; color: var(--clr-text); opacity: 0; transform: translateY(8px); transition: opacity var(--transition), transform var(--transition);}
+.gallery-item:hover .gallery-item-caption { opacity: 1; transform: translateY(0);}
+.gallery-item-zoom { position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; border-radius: 50%; background: rgba(201, 169, 110, 0.15); border: 1px solid rgba(201, 169, 110, 0.4); display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0.7); transition: opacity var(--transition), transform var(--transition);}
+.gallery-item:hover .gallery-item-zoom { opacity: 1; transform: scale(1);}
+.gallery-item-zoom svg { width: 14px; height: 14px; fill: none; stroke: var(--clr-gold); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;}
+
+</style>
+
+<!-- ============================================================
+     CSS — Lightbox / Popup
+     ============================================================ -->
+<style>
+
+.lightbox-backdrop { position: fixed; inset: 0; z-index: 9999; background: rgba(8, 8, 8, 0.92); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.35s ease;}
+.lightbox-backdrop.open { opacity: 1; pointer-events: all;}
+.lightbox-container { position: relative; max-width: 90vw; max-height: 86vh; display: flex; align-items: flex-start; transform: scale(0.94) translateY(16px); transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);}
+.lightbox-backdrop.open .lightbox-container { transform: scale(1) translateY(0);}
+.lightbox-img-wrap { max-width: 88vw; max-height: 82vh; border-radius: var(--radius-card); overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.8), 0 0 0 1px rgba(201,169,110,0.12);}
+.lightbox-img-wrap img { display: block; max-width: 88vw; max-height: 82vh; width: auto; height: auto; object-fit: contain; background: var(--clr-surface);}
+.lightbox-close { position: absolute; top: -16px; right: -16px; width: 40px; height: 40px; background: var(--clr-close-bg); border: none; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 10000; transition: background var(--transition), transform 0.2s ease; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.5);}
+.lightbox-close:hover { background: var(--clr-close-hover); transform: scale(1.1);}
+.lightbox-close svg { width: 16px; height: 16px; stroke: #fff; stroke-width: 2.2; stroke-linecap: round;}
+.lightbox-caption { position: absolute; bottom: -40px; left: 0; right: 0; text-align: center; font-family: var(--font-display); font-style: italic; font-size: 15px; color: var(--clr-muted); letter-spacing: 0.05em;}
+.lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; background: rgba(201, 169, 110, 0.1); border: 1px solid rgba(201, 169, 110, 0.3); border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background var(--transition); z-index: 10000; }
+.lightbox-nav:hover { background: rgba(201, 169, 110, 0.2);}
+.lightbox-nav svg { width: 18px; height: 18px; stroke: var(--clr-gold); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none;}
+.lightbox-prev { left: -64px; }
+.lightbox-next { right: -64px; }
+
+
+@media (max-width: 600px) 
+{
+   
+.lightbox-prev { left: 8px; }
+.lightbox-next { right: 8px; }
+.lightbox-nav  { top: auto; bottom: -64px; transform: none; }
+
+}
+
+</style>
+
+<!-- ============================================================
+     CSS — Footer
+     ============================================================ -->
+<style>
+
+
+footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border); padding: 64px 2rem 40px;}
+.footer-layout { max-width: none; margin: 0 auto; display: flex; flex-direction: column; gap: 56px;}
+.footer-top-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 32px;}
+.col-socials { justify-self: start; }
+.col-logo { justify-self: center; }
+.col-connect { justify-self: end; }
+
+.col-title { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; letter-spacing: 0.25em; color: var(--clr-gold); text-transform: uppercase; font-weight: 500; margin-bottom: 24px;}
+.col-connect .col-title { text-align: left;}
+.social-list { display: flex; flex-direction: column; gap: 16px;}
+.social-item { display: flex; align-items: center; gap: 12px; color: var(--clr-muted); font-size: 15px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; letter-spacing: 0.1em; text-transform: uppercase; transition: color var(--transition);}
+.social-item:hover { color: var(--clr-gold-light); }
+.social-icon-box { width: 45px; height: 45px; border: 1px solid var(--clr-border); border-radius: 4px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2);}
+.social-icon-box svg { width: 40px; height: 40px; fill: var(--clr-muted); transition: fill var(--transition); }
+.social-item:hover .social-icon-box svg { fill: var(--clr-gold-light); }
+.footer-logo-img { width: 450px; max-width: 450px; height: auto; display: block;}
+.connect-list { display: flex; flex-direction: column; gap: 12px; align-items: left;}
+.connect-list li a { font-size: 17px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: var(--clr-muted); letter-spacing: 0.05em; transition: color var(--transition);}
+.connect-list li a:hover { color: var(--clr-gold-light); }
+.footer-quote-row { text-align: center; padding-top: 40px; border-top: 1px solid var(--clr-border);}
+.footer-quote-text { font-family: var(--font-display); font-size: 20px; color: var(--clr-gold); line-height: 1.6; max-width: none; margin: 0 auto; font-weight: 600;}
+.footer-bottom-copy { margin-top: 32px; font-size: 20px; font-family: 'Times New Roman', Times, serif; color: var(--clr-muted); letter-spacing: 0.08em;}
+
+@media (max-width: 850px) 
+
+{
+
+.footer-top-row {grid-template-columns: 1fr; gap: 48px;}
+.footer-logo-img {max-width: 400px;}
+.logo-image { height: 50px;}
+
+.col-logo    { order: 1; justify-self: center; }
+.col-socials { order: 2; justify-self: center; }
+.col-connect { order: 3; justify-self: center; }
+.col-title, .col-connect .col-title { text-align: center; }
+.social-list { align-items: center; }
+.connect-list { align-items: center; }
+.footer-quote-text { font-size: 18px; }
+
+}
+
+
+
+
+</style>
+
+<!-- ============================================================
+     CSS — Responsive
+     ============================================================ -->
+<style>
+  @media (max-width: 1024px) {
+
+    .lightbox-prev { left: -52px; }
+    .lightbox-next { right: -52px; }
+  }
+
+@media (max-width: 900px) 
+  
+{
+  
+:root { --header-h: 360px;}
+
+.top-bar { padding: 0 1.25rem;}
+
+
+.hero-eyebrow { font-size: 18px;}
+.hero-title {font-size: 40px;}
+
+.gallery-section { padding: 48px 1.25rem 64px;}
+.gallery-grid {  gap: 8px;}
+
+.lightbox-close {top: -14px; right: -12px;}
+.lightbox-prev, .lightbox-next {display: none;}
+
+}
+
+
+
+@media (max-width: 480px) 
+
+
+{
+
+.logo-name { display: none; }
+.top-bar { height: 56px; }
+
+:root { --header-h: 270px;}
+
+.hero-eyebrow { font-size: 12px;}
+hero-title { font-size: 22px;}
+
+.gallery-grid {grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));gap: 6px;}
+
+.footer-logo-img {width: 300px;}
+
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     TOP BAR — Logo
+     ============================================================ -->
+<header class="top-bar">
+  <div class="logo-wrap" onclick="scrollToTop()">
+    <div class="logo-icon">
+      <img src="LOGO/RVK ADVENTURER LOGO.png" alt="Raj. Vishnu Kumar Logo" class="logo-image">
+    </div>
+    <div class="logo-name">
+      <span class="logo-name-main">Raj. Vishnu Kumar</span>
+      <span class="logo-name-sub">Adventurer of Life</span>
+    </div>
+  </div>
+</header>
+
+
+<!-- ============================================================
+     HERO HEADER
+     ============================================================ -->
+<section class="hero" aria-label="Gallery header">
+  <div class="hero-bg" role="presentation"></div>
+  <div class="hero-overlay" role="presentation"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Coimbatore Vlogger &amp; Fashion Model</p>
+    <h1 class="hero-title">
+      Raj. Vishnu Kumar's Gallery
+    </h1>
+    
+  </div>
+</section>
+
+
+<!-- ============================================================
+     GALLERY GRID
+     ============================================================ -->
+<main>
+  <section class="gallery-section" aria-label="Photo gallery">
+
+
+    <div class="gallery-grid" id="galleryGrid" role="list">
+
+      <!-- Image cards are injected by JS below -->
+
+    </div>
+  </section>
+</main>
+
+
+<!-- ============================================================
+     LIGHTBOX
+     ============================================================ -->
+<div class="lightbox-backdrop" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
+
+  <div class="lightbox-container" id="lbContainer">
+    <button class="lightbox-close" id="lbClose" aria-label="Close image">
+      <svg viewBox="0 0 24 24" fill="none">
+        <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <div class="lightbox-img-wrap">
+      <img id="lbImg" src="" alt="" />
+    </div>
+    <p class="lightbox-caption" id="lbCaption"></p>
+  </div>
+
+  <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+</div>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="footer-layout">
+
+    <div class="footer-top-row">
+
+      <div class="col-socials">
+        <h3 class="col-title">Social Media</h3>
+        <div class="social-list">
+          <a href="#" class="social-item">
+            <span class="social-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </span>
+            Email
+          </a>
+          <a href="#" class="social-item">
+            <span class="social-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </span>
+            LinkedIn
+          </a>
+          <a href="#" class="social-item">
+            <span class="social-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </span>
+            Facebook
+          </a>
+          <a href="#" class="social-item">
+            <span class="social-icon-box">
+              <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </span>
+            YouTube
+          </a>
+          <a href="#" class="social-item">
+            <span class="social-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </span>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="col-logo">
+        <img src="LOGO/RVK ADVENTURER LOGO.png" alt="RVK Banner" class="footer-logo-img">
+      </div>
+
+      <div class="col-connect">
+        <h3 class="col-title">Connect</h3>
+        <ul class="connect-list">
+          <li><a href="#">For Modelling Collaboration</a></li>
+          <li><a href="#">For Short Films</a></li>
+          <li><a href="#">For Nature Rides</a></li>
+          <li><a href="#">For A Cup of Tea</a></li>
+          <li><a href="#">For Website Creation</a></li>
+          <li><a href="#">For Anything Interesting</a></li>    
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-quote-row">
+      <p class="footer-quote-text" lang="ta">
+        “ நான் ஒரு தமிழ் பேசும் இந்தியன், பூமியின் ஆசியக் கண்டத்தில் வசிக்கிறேன்  ”
+      </p>
+      <div class="footer-bottom-copy">
+        &copy; Raj. Vishnu Kumar - Since 1999. All Rights Reserved.
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT — Gallery Data, Render, Lightbox, Utils
+     ============================================================ -->
+<script>
+  /* ----------------------------------------------------------
+     Gallery Data
+     Replace src values with your own image URLs.
+     caption is the hover label shown on each tile.
+  ---------------------------------------------------------- */
+  const GALLERY_IMAGES = [
+    { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80', caption: 'Mountain Horizon', alt: 'Mountain landscape at dawn' },
+    { src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&q=80', caption: 'Golden Fields', alt: 'Vibrant flower fields' },
+    { src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80', caption: 'Coastal Light', alt: 'Sea waves and rocks' },
+    { src: 'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=800&q=80', caption: 'Forest Path', alt: 'Sun-dappled forest trail' },
+    { src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80', caption: 'Night Sky', alt: 'Starry mountain skyline' },
+    { src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&q=80', caption: 'Valley Mist', alt: 'Misty valley at sunrise' },
+    { src: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=800&q=80', caption: 'Urban Geometry', alt: 'City building architecture' },
+    { src: 'https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800&q=80', caption: 'Wild Wings', alt: 'Bird in flight' },
+    { src: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80', caption: 'Desert Dawn', alt: 'Desert landscape at dawn' },
+    { src: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800&q=80', caption: 'Still Water', alt: 'Calm lake reflection' },
+    { src: 'https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?w=800&q=80', caption: 'Stone Street', alt: 'Old European cobblestone street' },
+    { src: 'https://images.unsplash.com/photo-1458668383970-8ddd3927deed?w=800&q=80', caption: 'Alpine Snow', alt: 'Snow-covered mountain peaks' },
+    { src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80', caption: 'Autumn Road', alt: 'Autumn road through woods' },
+    { src: 'https://images.unsplash.com/photo-1500964757637-c85e8a162699?w=800&q=80', caption: 'Waterfall Veil', alt: 'Cascading waterfall' },
+    { src: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&q=80', caption: 'Emerald Lake', alt: 'Turquoise mountain lake' },
+    { src: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80', caption: 'Ancient Woods', alt: 'Tall old-growth trees' },
+  ];
+
+
+  /* ----------------------------------------------------------
+     Render Gallery
+  ---------------------------------------------------------- */
+  (function renderGallery() {
+    const grid = document.getElementById('galleryGrid');
+    GALLERY_IMAGES.forEach((img, index) => {
+      const item = document.createElement('div');
+      item.className = 'gallery-item';
+      item.setAttribute('role', 'listitem');
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('aria-label', img.alt);
+      item.dataset.index = index;
+
+      item.innerHTML = `
+        <img src="${img.src}" alt="${img.alt}" loading="${index < 8 ? 'eager' : 'lazy'}" />
+        <div class="gallery-item-overlay">
+          <span class="gallery-item-caption">${img.caption}</span>
+        </div>
+        <div class="gallery-item-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            <line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/>
+          </svg>
+        </div>
+      `;
+
+      item.addEventListener('click',  () => openLightbox(index));
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(index); }
+      });
+
+      grid.appendChild(item);
+    });
+  })();
+
+
+  /* ----------------------------------------------------------
+     Lightbox Logic
+  ---------------------------------------------------------- */
+  const lightbox    = document.getElementById('lightbox');
+  const lbImg       = document.getElementById('lbImg');
+  const lbCaption   = document.getElementById('lbCaption');
+  const lbClose     = document.getElementById('lbClose');
+  const lbPrev      = document.getElementById('lbPrev');
+  const lbNext      = document.getElementById('lbNext');
+  let   currentIndex = 0;
+  let   originalOverflow = '';
+
+  function openLightbox(index) {
+    currentIndex = index;
+    setLightboxImage(currentIndex);
+    lightbox.classList.add('open');
+    originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = originalOverflow;
+  }
+
+  function setLightboxImage(index) {
+    const data = GALLERY_IMAGES[index];
+    lbImg.src        = data.src.replace('w=800', 'w=1400');
+    lbImg.alt        = data.alt;
+    lbCaption.textContent = data.caption;
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length;
+    setLightboxImage(currentIndex);
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % GALLERY_IMAGES.length;
+    setLightboxImage(currentIndex);
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click',  showPrev);
+  lbNext.addEventListener('click',  showNext);
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape')     closeLightbox();
+    if (e.key === 'ArrowLeft')  showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+
+
+  /* ----------------------------------------------------------
+     Scroll to top helper
+  ---------------------------------------------------------- */
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+
+  /* ----------------------------------------------------------
+     Intersection Observer — Fade-in gallery items on scroll
+  ---------------------------------------------------------- */
+  (function initScrollReveal() {
+    const style = document.createElement('style');
+    style.textContent = `
+      .gallery-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.55s ease, transform 0.55s ease,
+                    box-shadow 0.35s cubic-bezier(0.4,0,0.2,1),
+                    transform 0.35s cubic-bezier(0.4,0,0.2,1);
+      }
+      .gallery-item.revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    `;
+    document.head.appendChild(style);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const delay = (parseInt(entry.target.dataset.index, 10) % 4) * 70;
+          setTimeout(() => entry.target.classList.add('revealed'), delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.gallery-item').forEach((el) => observer.observe(el));
+  })();
+</script>
+
+</body>
+</html>

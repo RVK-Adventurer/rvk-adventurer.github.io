@@ -67,8 +67,7 @@ ul { list-style: none;}
      ============================================================ -->
 <style>
 
-.hero { position: relative; height: var(--header-h); display: flex; align-items: center; justify-content: center; overflow: hidden;}
-.hero-bg { position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=80'); background-size: cover; background-position: center 40%; filter: blur(4px) brightness(0.35); transform: scale(1.06);}
+.hero { position: relative; height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;}
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient( 180deg, rgba(13,13,13,0.3) 0%, rgba(13,13,13,0.15) 45%,rgba(13,13,13,0.7) 100%);}
 .hero-content { position: relative; z-index: 1; text-align: center; padding: 0 2rem;}
 .hero-eyebrow { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px; letter-spacing: 0.35em; color: var(--clr-gold); text-transform: uppercase; font-weight: 600; margin-bottom: 18px; opacity: 0;     animation: fadeUp 0.9s 0.2s forwards; }
@@ -86,16 +85,15 @@ ul { list-style: none;}
      ============================================================ -->
 <style>
 
-.gallery-section { padding: 64px 2rem 80px; max-width: none; margin: 0 auto;}
+.gallery-section { padding: 10px 2rem 20px; max-width: none; margin: 0 auto;}
 .section-label { font-family: var(--font-body); font-size: 9px; letter-spacing: 0.35em; color: var(--clr-gold); text-transform: uppercase; font-weight: 500; margin-bottom: 8px;}
 .section-heading { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 300; letter-spacing: 0.05em; color: var(--clr-text); margin-bottom: 40px;}
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px;}
-.gallery-item { aspect-ratio: 4 / 4; overflow: hidden; border-radius: var(--radius-card); cursor: pointer; position: relative; background: var(--clr-surface); border: 1px solid var(--clr-border); transition: transform var(--transition), box-shadow var(--transition);}
+.gallery-item { aspect-ratio: 4 / 4; overflow: hidden; border-radius: var(--radius-card); cursor: pointer; position: relative;}
 .gallery-item img { transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease; transform-origin: center;}
-.gallery-item:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,169,110,0.2);}
-.gallery-item:hover img { transform: scale(1.06); filter: brightness(0.8);}
+.gallery-item:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(255, 255, 255, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.2);}
+.gallery-item:hover img { transform: scale(1); filter: brightness(1);}
 .gallery-item-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0); display: flex; align-items: flex-end; padding: 16px; transition: background var(--transition); pointer-events: none;}
-.gallery-item:hover .gallery-item-overlay { background: rgba(0,0,0,0.4);}
 .gallery-item-caption { font-family: var(--font-display); font-size: 15px; font-style: italic; color: var(--clr-text); opacity: 0; transform: translateY(8px); transition: opacity var(--transition), transform var(--transition);}
 .gallery-item:hover .gallery-item-caption { opacity: 1; transform: translateY(0);}
 .gallery-item-zoom { position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; border-radius: 50%; background: rgba(201, 169, 110, 0.15); border: 1px solid rgba(201, 169, 110, 0.4); display: flex; align-items: center; justify-content: center; opacity: 0; transform: scale(0.7); transition: opacity var(--transition), transform var(--transition);}
@@ -159,9 +157,9 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 .social-icon-box svg { width: 40px; height: 40px; fill: var(--clr-muted); transition: fill var(--transition); }
 .social-item:hover .social-icon-box svg { fill: var(--clr-gold-light); }
 .footer-logo-img { width: 450px; max-width: 450px; height: auto; display: block;}
-.connect-list { display: flex; flex-direction: column; gap: 12px; align-items: left;}
-.connect-list li a { font-size: 17px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: var(--clr-muted); letter-spacing: 0.05em; transition: color var(--transition);}
-.connect-list li a:hover { color: var(--clr-gold-light); }
+.connect-list { display: flex; flex-direction: column; gap: 30px; align-items: flex-start;}
+.connect-list li { font-size: 17px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: var(--clr-muted); letter-spacing: 0.05em; transition: color var(--transition); cursor: default;}
+.connect-list li:hover { color: var(--clr-gold-light); }
 .footer-quote-row { text-align: center; padding-top: 40px; border-top: 1px solid var(--clr-border);}
 .footer-quote-text { font-family: var(--font-display); font-size: 20px; color: var(--clr-gold); line-height: 1.6; max-width: none; margin: 0 auto; font-weight: 600;}
 .footer-bottom-copy { margin-top: 32px; font-size: 20px; font-family: 'Times New Roman', Times, serif; color: var(--clr-muted); letter-spacing: 0.08em;}
@@ -203,7 +201,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
   
 {
   
-:root { --header-h: 360px;}
+.hero { height: 200px;}
 
 .top-bar { padding: 0 1.25rem;}
 
@@ -211,7 +209,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 .hero-eyebrow { font-size: 18px;}
 .hero-title {font-size: 40px; line-height: 1.5; font-weight: 700;}
 
-.gallery-section { padding: 48px 1.25rem 64px;}
+.gallery-section { padding: 10px 1.25rem 20px;}
 .gallery-grid {  gap: 8px;}
 
 .lightbox-close {top: -14px; right: -12px;}
@@ -228,8 +226,8 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 
 .logo-name { display: none; }
 .top-bar { height: 56px; }
-.connect-list li a { font-size: 15px;}
-:root { --header-h: 250px;}
+.connect-list li { font-size: 15px;}
+.hero { height: 160px;}
 
 .hero-eyebrow { font-size: 12px;}
 .hero-title { font-size: 23px; font-weight: 700; line-height: 1.5;}
@@ -237,6 +235,8 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 .gallery-grid {grid-template-columns: repeat(3, 1fr); gap: 6px;}
 .social-item {font-size: 13px;}
 .footer-logo-img {width: 300px;}
+.footer-quote-text { font-size: 14px; }
+.footer-bottom-copy {font-size: 10px;}
 
 }
 
@@ -382,12 +382,12 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
       <div class="col-connect">
         <h3 class="col-title">Connect</h3>
         <ul class="connect-list">
-          <li><a href=" ">For Modelling Collaboration</a></li>
-          <li><a href=" ">For Short Films</a></li>
-          <li><a href=" ">For Nature Rides</a></li>
-          <li><a href=" ">For A Cup of Tea</a></li>
-          <li><a href=" ">For Website Creation</a></li>
-          <li><a href=" ">For Anything Interesting</a></li>    
+          <li>For Modelling Collaboration</li>
+          <li>For Short Films</li>
+          <li>For Nature Rides</li>
+          <li>For A Cup of Tea</li>
+          <li>For Website Creation</li>
+          <li>For Anything Interesting</li>    
         </ul>
       </div>
 
@@ -398,7 +398,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
         “ நான் ஒரு தமிழ் பேசும் இந்தியன், பூமியின் ஆசியக் கண்டத்தில் வசிக்கிறேன்  ”
       </p>
       <div class="footer-bottom-copy">
-        &copy; Raj. Vishnu Kumar - Since 1999. All Rights Reserved.
+        &copy; Raj. Vishnu Kumar - Since 1999. <br>All Rights Reserved.
       </div>
     </div>
 
@@ -417,19 +417,22 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
   ---------------------------------------------------------- */
   const GALLERY_IMAGES = [
 
-{ src: 'IMAGES/COAT.png',caption: '', alt: '' },
+
+
+{ src: 'IMAGES/COAT.png',caption: '', alt: ' ' },
 { src: 'IMAGES/WHITE-COLLAGE.png',caption: '', alt: '' },
 { src: 'IMAGES/BLACK-COLLAGE.png',caption: '', alt: '' },
 { src: 'IMAGES/YOUTUBE DP.png',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER BLAZER STYLE.jpg',caption: '', alt: '' },
+{ src: 'IMAGES/RVK RED AND RED_1.jpg',caption: '', alt: '' },
+
+
 { src: 'IMAGES/RVK MAROON COAT - 5.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 6.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 1.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 2.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 3.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 4.jpg',caption: '', alt: '' },
-
-
 { src: 'IMAGES/RVK MAROON COAT - 10.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 11.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 12.jpg',caption: '', alt: '' },
@@ -438,7 +441,6 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK MAROON COAT - 17.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 18.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 19.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK MAROON COAT - 20.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 21.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 22.jpg',caption: '', alt: '' },
@@ -449,11 +451,11 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK MAROON COAT - 27.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 28.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 29.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK MAROON COAT - 7.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 8.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK MAROON COAT - 9.jpg',caption: '', alt: '' },
-{ src: 'IMAGES/RVK RED AND RED_1.jpg',caption: '', alt: '' },
+
+
 { src: 'IMAGES/RVK WHITE - 10.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK WHITE - 11.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK WHITE - 12.jpg',caption: '', alt: '' },
@@ -462,7 +464,6 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK WHITE - 3.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK WHITE - 4.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK WHITE - 5.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK WHITE - 7.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK WHITE - 8.jpg',caption: '', alt: '' },
 
@@ -477,6 +478,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE WHITE - 1.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE WHITE - 2.jpg',caption: '', alt: '' },
 { src: 'IMAGES/LONG HAIR.jpg',caption: '', alt: '' },
+
 
 { src: 'IMAGES/RVK BLACK - 1.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK BLACK - 10.jpg',caption: '', alt: '' },
@@ -495,8 +497,6 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK BLACK - 6.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK BLACK - 7.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK BLACK - 9.jpg',caption: '', alt: '' },
-
-
 
 
 { src: 'IMAGES/KOLLENGODE - 1.jpg',caption: '', alt: '' },
@@ -523,7 +523,6 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK ADVENTURER CELEBRITY CLUB COIMBATORE.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER DOCTOR BLACK.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER NATURE BLACK.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK BLACK BEARD.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK SIDE BEARD NATURE.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER TREK.jpg',caption: '', alt: '' },
@@ -531,24 +530,17 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK ADVENTURER ALIYAR.jpeg',caption: '', alt: '' },
 
 
-
-
-
 { src: 'IMAGES/RVK ADVENTURER DENIM.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER DENIM - 2.jpeg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK ADVENTURER DENIM - 3.jpeg',caption: '', alt: '' },
-
-
 { src: 'IMAGES/RVK ADVENTURER YERCAUD - 3.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER YERCAUD - 5.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER YERCAUD - 6.jpg',caption: '', alt: '' },
-
-
 { src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 3.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 4.jpeg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK ADVENTURER CLOSEUP.jpeg',caption: '', alt: '' },
+
+
 { src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE COIMBATORE - 3.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE COIMBATORE - 6.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM - 2.jpg',caption: '', alt: '' },
@@ -556,28 +548,17 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM.jpg',caption: '', alt: '' },
 
 
-
-
-
-
-
-
-
-
-
-
 { src: 'IMAGES/RVK ADVENTURER DAM.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER HAIRCUT.jpeg',caption: '', alt: '' },
+
 
 { src: 'IMAGES/RVK ADVENTURER DINDUGUL - 2.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER DINDUGUL.jpg',caption: '', alt: '' },
 
+
 { src: 'IMAGES/RVK ADVENTURER DIWALI CELEB.jpg',caption: '', alt: '' },
-
-
 { src: 'IMAGES/RVK ADVENTURER BOOMERANG COIMBATORE.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER GREEN MASS - 1.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK ADVENTURER GREEN MASS - 7.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER OOTY DRIVE.jpg',caption: '', alt: '' },
 
@@ -597,6 +578,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RAJ VISHNU KUMAR KOVAI KUTTRALAM BRIDGE.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER MYSORE.jpeg',caption: '', alt: '' },
 
+
 { src: 'IMAGES/RVK ADVENTURER CLOSEUP.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER NILGRIS.jpeg',caption: '', alt: '' },
 
@@ -611,6 +593,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK ADVENTURER OOTY.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RAJ VISHNU KUMAR VTG ZENFRA - 2.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RAJ VISHNU KUMAR VTG ZENFRA.jpeg',caption: '', alt: '' },
+{ src: 'IMAGES/Raj Vishnu Kumar at ZENfra Virtual Tech Gurus.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER VADANAPALLY BEACH - 2.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER SIRUVANI.jpg',caption: '', alt: '' },
 
@@ -622,6 +605,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK ADVENTURER TIDEL PARK.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER TRADITIONAL.jpeg',caption: '', alt: '' },
 
+
 { src: 'IMAGES/RVK ADVENTURER PINK - 1.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER PINK - 2.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER PINK - 6.jpeg',caption: '', alt: '' },
@@ -629,6 +613,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK ADVENTURER PURPLE - 2.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER PURPLE - 3.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER PURPLE - 4.jpeg',caption: '', alt: '' },
+
 
 { src: 'IMAGES/RVK ADVENTURER POLLACHI.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER PHOTOGRAPHER.jpeg',caption: '', alt: '' },
@@ -644,59 +629,36 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK VOC PARK COVAI.jpg',caption: '', alt: '' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER SIMPLE.jpeg',caption: '', alt: '' },
 
 
-
-
-
-
-{ src: 'IMAGES/RVK ADVENTURER STYLE.JPG',caption: '', alt: '' },
 
 { src: 'IMAGES/RVK ADVENTURER SHOUT.jpeg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK ADVENTURER VINTAGE - 1.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER VINTAGE - 2.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER VINTAGE - 3.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER VINTAGE - 4.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER BLACK AND WHITE.jpeg',caption: '', alt: '' },
-
-
 { src: 'IMAGES/RVK ADVENTURER TERROR.jpeg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK BW.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER HAIRSTYLE - 2.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER HAIRSTYLE.jpg',caption: '', alt: '' },
 
 
 { src: 'IMAGES/RVK ADVENTURER SUN RAYS.JPG',caption: '', alt: '' },
-
-
-
-
-
+{ src: 'IMAGES/RVK ADVENTURER SIMPLE.jpeg',caption: '', alt: '' },
+{ src: 'IMAGES/RVK ADVENTURER STYLE.JPG',caption: '', alt: '' },
 { src: 'IMAGES/RVK GANDHIMANAGAR 1.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK MADURAI.jpeg',caption: '', alt: '' },
-
-
-
-
-
-
-
 { src: 'IMAGES/RVK ADVENTURER VALANKULAM.jpg',caption: '', alt: '' },
 { src: 'IMAGES/A2018.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/A2021.jpeg',caption: '', alt: '' },
 
 
-
-
-
-
 { src: 'IMAGES/RVK ADVENTURER HARLEY DAVIDSON - 2.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER METEOR.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ROYAL ENFIELD.jpeg',caption: '', alt: '' },
+
+
 { src: 'IMAGES/RVK ADVENTURER FUN MALL.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER GREEN MASS - 2.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER GREEN MASS - 3.jpeg',caption: '', alt: '' },
@@ -712,33 +674,24 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 { src: 'IMAGES/RVK ADVENTURER DENIM - 3.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER SIRUVANI RIVER BED.jpeg',caption: '', alt: '' },
 
+
 { src: 'IMAGES/RVK CYCLE.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER 2 WHEELED FRIENDS.jpeg',caption: '', alt: '' },
-
-
-
-
 { src: 'IMAGES/RVK ADVENTURER STYLISH BIKE.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER V3 FZ DARK KNIGHT.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER FZ V3 NEW BIKE.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER NEW BIKE FIRST RIDE.jpg',caption: '', alt: '' },
-
-
-{ src: 'IMAGES/RVK ADVENTURER BIKE.jpeg',caption: '', alt: '' },
-
-
 { src: 'IMAGES/RVK WHITE - 9.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK WHITE - 6.jpg',caption: '', alt: '' },
 { src: 'IMAGES/FZ DARK KNIGHT MASS.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 4.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 5.jpg',caption: '', alt: '' },
-
+{ src: 'IMAGES/RVK ADVENTURER BIKE.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER KAVAISLAND.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER DAM BIKE SHOOT.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER NELLITHURAI.jpeg',caption: '', alt: '' },
 { src: 'IMAGES/HARLEY DAVISON RVK ADVENTURER.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER HARLEY DAVIDSON.jpg',caption: '', alt: '' },
-
 { src: 'IMAGES/RVK ADVENTURER BLACK CYCLE.jpg',caption: '', alt: '' },
 { src: 'IMAGES/RVK ADVENTURER CODDISSIA.jpeg',caption: '', alt: '' },
 

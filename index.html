@@ -1,25 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <title>RVK ADVENTURER'S Gallery</title>
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>RVK Adventurer Gallery | Raj Vishnu Kumar - Model & Vlogger</title>
+<meta name="title" content="RVK Adventurer Gallery | Raj Vishnu Kumar - Model & Vlogger">
+<meta name="description" content="Explore the official photo gallery of Raj Vishnu Kumar (RVK Adventurer). Coimbatore fashion model, YouTuber, digital marketer, and nature travel lover.">
+<meta name="keywords" content="Raj Vishnu Kumar, RVK Adventurer, Coimbatore fashion model, Tamil Nadu vlogger, digital marketer, website developer, cyclist, data analyst, photography portfolio, photo gallery"> 
+<meta name="author" content="Raj Vishnu Kumar">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+
+
+
+<link rel="canonical" href="[INSERT_YOUR_WEBSITE_URL_HERE]">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rvk-adventurer.github.io/">
+<meta property="og:title" content="RVK Adventurer Gallery | Raj Vishnu Kumar">
+<meta property="og:description" content="Explore the official photo gallery of Raj Vishnu Kumar (RVK Adventurer). Coimbatore fashion model, YouTuber, digital marketer and nature travel lover.">
+<meta property="og:image" content="[INSERT_YOUR_OG_IMAGE_PATH_HERE]">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta property="og:site_name" content="RVK Adventurer Gallery">
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="[INSERT_FAVICON_PNG_PATH_HERE]">
+<link rel="icon" href="[INSERT_FAVICON_ICO_PATH_HERE]" type="image/x-icon">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "RVK Adventurer's Gallery",
+  "url": "[https://rvk-adventurer.github.io/]",
+  "description": "The official photography portfolio and gallery of Raj Vishnu Kumar, showcasing his modeling, travel and lifestyle.",
+  "about": {
+    "@type": "Person",
+    "name": "Raj Vishnu Kumar",
+    "alternateName": "RVK Adventurer",
+    "jobTitle": [
+      "Fashion Model", 
+      "Digital Marketer", 
+      "YouTuber", 
+      "Website Developer", 
+      "Data and Business Analyst"
+    ],
+    "homeLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Coimbatore",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      }
+    },
+    "url": "https://rvk-adventurer.github.io/"
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
 
-
-
-
-<!-- ============================================================
-     CSS — Global Variables & Reset
-     ============================================================ -->
 <style>
+/* ============================================================
+   CSS — Global Variables & Reset
+   ============================================================ */
 :root {
     --clr-bg:          #0d0d0d;
     --clr-surface:     #161616;
-    --clr-surface-                  alt: #1e1e1e;
+    --clr-surface-alt: #1e1e1e;
     --clr-border:      rgba(255,255,255,0.08);
     --clr-gold:        #c9a96e;
     --clr-gold-light:  #e8cfa0;
@@ -35,22 +94,17 @@
     --header-h:        300px;
     --logo-size:       48px;
   }
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0;}
 html { font-size: 16px; scroll-behavior: smooth;}
 body { background: var(--clr-bg); color: var(--clr-text); font-family: var(--font-body); font-weight: 300; line-height: 1.7; min-height: 100vh; overflow-x: hidden;}
 img { display: block; width: 100%; height: 100%; object-fit: contain;}
 a { color: inherit; text-decoration: none;}
 ul { list-style: none;}
-</style>
 
 
-
-
-<!-- ============================================================
-     CSS — Top Bar / Logo
-     ============================================================ -->
-<style>
+/* ============================================================
+   CSS — Top Bar / Logo
+   ============================================================ */
 .top-bar { position: sticky; top: 0; z-index: 900; display: flex; align-items: center; padding: 0 2rem; height: 90px; background: rgba(13, 13, 13, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--clr-border);}
 .logo-wrap { display: flex; align-items: center; gap: 12px; cursor: pointer; user-select: none;}
 .logo-icon { display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative;}
@@ -60,31 +114,24 @@ ul { list-style: none;}
 .logo-name-main { font-family: var(--font-display); font-size: 25px; font-weight: 700; letter-spacing: 0.12em; color: var(--clr-gold-light); line-height: 1.1; text-transform: uppercase;}
 .logo-name-sub { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 15px; letter-spacing: 0.22em; color: var(--clr-muted); text-transform: uppercase; font-weight: 900;}
 .logo-image { height: 85px;  width: auto; object-fit: contain;}
-</style>
 
-<!-- ============================================================
-     CSS — Hero / Header
-     ============================================================ -->
-<style>
 
+/* ============================================================
+   CSS — Hero / Header
+   ============================================================ */
 .hero { position: relative; height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;}
-.hero-overlay { position: absolute; inset: 0; background: linear-gradient( 180deg, rgba(13,13,13,0.3) 0%, rgba(13,13,13,0.15) 45%,rgba(13,13,13,0.7) 100%);}
 .hero-content { position: relative; z-index: 1; text-align: center; padding: 0 2rem;}
 .hero-eyebrow { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px; letter-spacing: 0.35em; color: var(--clr-gold); text-transform: uppercase; font-weight: 600; margin-bottom: 18px; opacity: 0;     animation: fadeUp 0.9s 0.2s forwards; }
 .hero-title { font-family: var(--font-display); font-size: 60px; font-weight: 700; letter-spacing: 0.08em; line-height: 1.1;   text-transform: uppercase; color: var(--clr-gold); opacity: 0; animation: fadeUp 0.9s 0.45s forwards;}
-
 .hero-rule { width: 80px; height: 1px; background: var(--clr-gold); margin: 28px auto 22px; opacity: 0; animation: fadeUp 0.9s 0.65s forwards;}
 .hero-sub { font-family: var(--font-body); font-size: 12px; letter-spacing: 0.28em; color: var(--clr-muted); text-transform: uppercase; font-weight: 400; opacity: 0; animation: fadeUp 0.9s 0.8s forwards;}
 
 @keyframes fadeUp {from { opacity: 0; transform: translateY(22px); } to   { opacity: 1; transform: translateY(0); }}
 
-</style>
 
-<!-- ============================================================
-     CSS — Gallery Grid
-     ============================================================ -->
-<style>
-
+/* ============================================================
+   CSS — Gallery Grid
+   ============================================================ */
 .gallery-section { padding: 30px 2rem 20px; max-width: none; margin: 0 auto;}
 .section-label { font-family: var(--font-body); font-size: 9px; letter-spacing: 0.35em; color: var(--clr-gold); text-transform: uppercase; font-weight: 500; margin-bottom: 8px;}
 .section-heading { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 300; letter-spacing: 0.05em; color: var(--clr-text); margin-bottom: 40px;}
@@ -100,13 +147,10 @@ ul { list-style: none;}
 .gallery-item:hover .gallery-item-zoom { opacity: 1; transform: scale(1);}
 .gallery-item-zoom svg { width: 14px; height: 14px; fill: none; stroke: var(--clr-gold); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;}
 
-</style>
 
-<!-- ============================================================
-     CSS — Lightbox / Popup
-     ============================================================ -->
-<style>
-
+/* ============================================================
+   CSS — Lightbox / Popup
+   ============================================================ */
 .lightbox-backdrop { position: fixed; inset: 0; z-index: 9999; background: rgba(8, 8, 8, 0.92); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.35s ease;}
 .lightbox-backdrop.open { opacity: 1; pointer-events: all;}
 .lightbox-container { position: relative; max-width: 95vw; max-height: 90vh; display: flex; flex-direction: column; align-items: center; transform: scale(0.94) translateY(16px); transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);}
@@ -123,7 +167,6 @@ ul { list-style: none;}
 .lightbox-prev { left: -64px; }
 .lightbox-next { right: -64px; }
 
-
 @media (max-width: 600px) 
 {
    
@@ -133,21 +176,16 @@ ul { list-style: none;}
 
 }
 
-</style>
 
-<!-- ============================================================
-     CSS — Footer
-     ============================================================ -->
-<style>
-
-
+/* ============================================================
+   CSS — Footer
+   ============================================================ */
 footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border); padding: 64px 2rem 40px;}
 .footer-layout { max-width: none; margin: 0 auto; display: flex; flex-direction: column; gap: 56px;}
 .footer-top-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 32px;}
 .col-socials { justify-self: start; }
 .col-logo { justify-self: center; }
 .col-connect { justify-self: end; }
-
 .col-title { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 15px; letter-spacing: 0.25em; color: var(--clr-gold); text-transform: uppercase; font-weight: 500; margin-bottom: 24px;}
 .col-connect .col-title { text-align: left;}
 .social-list { display: flex; flex-direction: column; gap: 16px;}
@@ -171,7 +209,6 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 .footer-top-row {grid-template-columns: 1fr; gap: 48px;}
 .footer-logo-img {max-width: 400px;}
 .logo-image { height: 50px;}
-
 .col-logo    { order: 1; justify-self: center; }
 .col-socials { order: 2; justify-self: center; }
 .col-connect { order: 3; justify-self: center; }
@@ -183,18 +220,16 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 }
 
 
-
-
-</style>
-
-<!-- ============================================================
-     CSS — Responsive
-     ============================================================ -->
-<style>
-  @media (max-width: 1024px) {
+/* ============================================================
+   CSS — Responsive
+   ============================================================ */
+  @media (max-width: 1024px) 
+  
+  {
 
     .lightbox-prev { left: -52px; }
     .lightbox-next { right: -52px; }
+
   }
 
 @media (max-width: 900px) 
@@ -202,16 +237,11 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 {
   
 .hero { height: 200px;}
-
 .top-bar { padding: 0 1.25rem;}
-
-
 .hero-eyebrow { font-size: 18px;}
 .hero-title {font-size: 40px; line-height: 1.5; font-weight: 700;}
-
 .gallery-section { padding: 15px 1.25rem 20px;}
 .gallery-grid {  gap: 8px;}
-
 .lightbox-close {top: -14px; right: -12px;}
 .lightbox-prev, .lightbox-next {display: none;}
 
@@ -228,10 +258,8 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 .top-bar { height: 56px; }
 .connect-list li { font-size: 15px;}
 .hero { height: 160px;}
-
 .hero-eyebrow { font-size: 12px;}
 .hero-title { font-size: 23px; font-weight: 700; line-height: 1.5;}
-
 .gallery-grid {grid-template-columns: repeat(3, 1fr); gap: 6px;}
 .social-item {font-size: 13px;}
 .footer-logo-img {width: 300px;}
@@ -240,10 +268,11 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 
 }
 
-
-
-
 </style>
+
+
+
+
 </head>
 
 <body>
@@ -254,7 +283,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 <header class="top-bar">
   <div class="logo-wrap" onclick="scrollToTop()">
     <div class="logo-icon">
-      <img src="LOGO/RVK ADVENTURER LOGO.png" alt="Raj. Vishnu Kumar Logo" class="logo-image">
+      <img src="LOGO/RVK ADVENTURER LOGO.png" alt="RVK Adventurer Logo" class="logo-image">
     </div>
     <div class="logo-name">
       <span class="logo-name-main">Raj. Vishnu Kumar</span>
@@ -268,8 +297,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
      HERO HEADER
      ============================================================ -->
 <section class="hero" aria-label="Gallery header">
-  <div class="hero-bg" role="presentation"></div>
-  <div class="hero-overlay" role="presentation"></div>
+
   <div class="hero-content">
     <p class="hero-eyebrow">Coimbatore Vlogger &amp; Fashion Model</p>
     <h1 class="hero-title">
@@ -345,7 +373,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
             </span>
             LinkedIn
           </a>
-          <a href="https://https://www.facebook.com/profile.php?id=61568713311942" target="_blank" class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=61568713311942" target="_blank" class="social-item">
             <span class="social-icon-box">
               <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </span>
@@ -370,13 +398,13 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
     </svg>
   </span>
-  Website
+  Vishnupedia 
 </a>
         </div>
       </div>
 
       <div class="col-logo">
-        <img src="LOGO/RVK ADVENTURER LOGO.png" alt="RVK Banner" class="footer-logo-img">
+        <img src="LOGO/RVK ADVENTURER LOGO.png" alt="RVK Adventurer Logo" class="footer-logo-img">
       </div>
 
       <div class="col-connect">
@@ -398,7 +426,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
         “ நான் ஒரு தமிழ் பேசும் இந்தியன், பூமியின் ஆசியக் கண்டத்தில் வசிக்கிறேன்  ”
       </p>
       <div class="footer-bottom-copy">
-        &copy; Raj. Vishnu Kumar - Since 1999. <br>All Rights Reserved.
+        &copy; Raj. Vishnu Kumar (AKA) RVK Adventurer - Since 1999. <br>All Rights Reserved.
       </div>
     </div>
 
@@ -419,280 +447,278 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 
 
 
-{ src: 'IMAGES/COAT.png',caption: 'Elegant Maroon Blazer Stylish Collage of Coimbatore Model',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, showcasing his elegance in a maroon blazer ' },
-{ src: 'IMAGES/WHITE-COLLAGE.png',caption: 'Stylish White Outfit Collage of Coimbatore Model',                   alt: 'A white outfit collage featuring the Coimbatore model and India vlogger, Raj Vishnu Kumar' },
-{ src: 'IMAGES/BLACK-COLLAGE.png',caption: ' Rugged Black Collage Tamil Nadu Model',                   alt: 'A collage showcasing the rugged looks and best hair style for Men by Tamil Nadu model, Raj Vishnu Kumar' },
-{ src: 'IMAGES/YOUTUBE DP.png',caption: 'RVK Adventurer YouTube',                   alt: 'RVK Adventurer, an India model, presenting a fashion stylish portrait' },
-{ src: 'IMAGES/RVK ADVENTURER BLAZER STYLE.jpg',caption: 'Stunning Blazer Look of Tamil Nadu Vlogger',                   alt: 'The fashion stylish Raj Vishnu Kumar, a Tamil Nadu vlogger, showing a stunning look in a blazer' },
-{ src: 'IMAGES/RVK RED AND RED_1.jpg',caption: 'Stunning Traditional Red Outfit At Coimbatore Codissia',                   alt: 'India model Raj Vishnu Kumar in a stunning all-red traditional look at Coimbatore Codissia' },
+{ src: 'IMAGES/COAT.png',   caption: 'Elegant Maroon Blazer Stylish Collage of Coimbatore Model',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, showcasing his elegance in a maroon blazer ' },
+{ src: 'IMAGES/WHITE-COLLAGE.png',    caption: 'Stylish White Outfit Collage of Coimbatore Model',                   alt: 'A white outfit collage featuring the Coimbatore model and India vlogger, Raj Vishnu Kumar' },
+{ src: 'IMAGES/BLACK-COLLAGE.png',    caption: ' Rugged Black Collage of Tamil Nadu Model',                   alt: 'A collage showcasing the rugged looks and best hair style for Men by Tamil Nadu model, Raj Vishnu Kumar' },
+{ src: 'IMAGES/YOUTUBE DP.png',    caption: 'RVK Adventurer YouTube',                   alt: 'RVK Adventurer, an India model, presenting a fashion stylish portrait' },
+{ src: 'IMAGES/RVK ADVENTURER BLAZER STYLE.jpg',    caption: 'Stunning Blazer Look of Tamil Nadu Vlogger',                   alt: 'The fashion stylish Raj Vishnu Kumar, a Tamil Nadu vlogger, showing a stunning look in a blazer' },
+{ src: 'IMAGES/RVK RED AND RED_1.jpg',    caption: 'Stunning Traditional Red Outfit At Coimbatore Codissia',                   alt: 'India model Raj Vishnu Kumar in a stunning all-red traditional look at Coimbatore Codissia' },
 
 
-{ src: 'IMAGES/RVK MAROON COAT - 5.jpg',caption: 'Maroon Blazer Stylish Pose of Coimbatore Model',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, adjusting his maroon blazer against a white background' },
-{ src: 'IMAGES/RVK MAROON COAT - 6.jpg',caption: 'Tamil Nadu Vlogger In Maroon Suit',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking up thoughtfully, showcasing a fashion stylish maroon suit' },
-{ src: 'IMAGES/RVK MAROON COAT - 1.jpg',caption: 'Sharp Maroon Outfit For Modern Men',                   alt: 'Side profile of India model RVK Adventurer looking over his shoulder, featuring the best hair style for Men in a sharp maroon outfit' },
-{ src: 'IMAGES/RVK MAROON COAT - 2.jpg',caption: 'Fashion Stylish Maroon Blazer',                   alt: 'Side profile of Coimbatore model Raj Vishnu Kumar, looking fashion stylish in a maroon blazer against a white background' },
+{ src: 'IMAGES/RVK MAROON COAT - 5.jpg',    caption: 'Maroon Blazer Stylish Pose of Coimbatore Model',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, adjusting his maroon blazer against a white background' },
+{ src: 'IMAGES/RVK MAROON COAT - 6.jpg',    caption: 'Tamil Nadu Vlogger In Maroon Suit',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking up thoughtfully, showcasing a fashion stylish maroon suit' },
+{ src: 'IMAGES/RVK MAROON COAT - 1.jpg',    caption: 'Sharp Maroon Outfit For Modern Men',                   alt: 'Side profile of India model RVK Adventurer looking over his shoulder, featuring the best hair style for Men in a sharp maroon outfit' },
+{ src: 'IMAGES/RVK MAROON COAT - 2.jpg',    caption: 'Fashion Stylish Maroon Blazer',                   alt: 'Side profile of Coimbatore model Raj Vishnu Kumar, looking fashion stylish in a maroon blazer against a white background' },
+{ src: 'IMAGES/RVK MAROON COAT - 3.jpg',    caption: ' Stylish Maroon Suit Worn by a Tamil Nadu Vlogger ',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar glancing over his shoulder, showcasing the best hair style for Men in his maroon suit' },
+{ src: 'IMAGES/RVK MAROON COAT - 4.jpg',    caption: ' Portrait of an India Model in a Stylish Maroon Blazer',                  alt: 'India model RVK Adventurer adjusting his maroon blazer, demonstrating a fashion stylish look on a white backdrop' },
+{ src: 'IMAGES/RVK MAROON COAT - 10.jpg',    caption: ' Coimbatore Vlogger Posing in a Maroon Suit',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar wearing sunglasses and a maroon suit, posing confidently with hands in his pockets' },
+{ src: 'IMAGES/RVK MAROON COAT - 11.jpg',    caption: ' Tamil Nadu Model Presenting in Formal Wear',                   alt: 'Tamil Nadu model Raj Vishnu Kumar leaning forward in a chair, presenting a fashion stylish pose in formal wear' },
+{ src: 'IMAGES/RVK MAROON COAT - 12.jpg',    caption: ' India Vlogger Showcasing a Modern Maroon Blazer Style',                   alt: 'India vlogger Raj Vishnu Kumar relaxing with crossed legs in a maroon blazer, highlighting a modern men fashion look' },
+{ src: 'IMAGES/RVK MAROON COAT - 15.jpg',    caption: ' Stylish Seated Portrait of a Coimbatore Model',                   alt: 'RVK Adventurer looking away thoughtfully while seated, a fashion stylish portrait of the Coimbatore model' },
+{ src: 'IMAGES/RVK MAROON COAT - 16.jpg',    caption: ' Tamil Nadu Vlogger Wearing a Stylish Maroon Blazer',                   alt: 'Tamil Nadu vlogger wearing sunglasses and a maroon blazer, looking up in a stylish studio pose' },
+{ src: 'IMAGES/RVK MAROON COAT - 17.jpg',    caption: ' India Model Fashioning a Stylish Maroon Suit',                   alt: 'India model Raj Vishnu Kumar leaning back in an office chair, showing off a fashion stylish maroon suit' },
+{ src: 'IMAGES/RVK MAROON COAT - 18.jpg',    caption: ' Coimbatore Model Seated in a Maroon Blazer',                   alt: 'Profile view of Coimbatore model Raj Vishnu Kumar seated in a chair, wearing a sharp maroon blazer and sunglasses' },
+{ src: 'IMAGES/RVK MAROON COAT - 19.jpg',    caption: ' Tamil Nadu Model Sporting a Stylish Maroon Jacket',                   alt: 'Tamil Nadu model adjusting his fashion stylish maroon jacket, an edgy studio portrait featuring RVK Adventurer' },
+{ src: 'IMAGES/RVK MAROON COAT - 20.jpg',    caption: ' Portrait of an India Vlogger with the Best Hair Style',                   alt: 'India vlogger Raj Vishnu Kumar standing with hands in his pockets, sporting the best hair style for Men and sunglasses' },
+{ src: 'IMAGES/RVK MAROON COAT - 21.jpg',    caption: ' Coimbatore Model in a Classic Maroon Suit Style',                   alt: 'Coimbatore model standing confidently in a maroon suit and white shirt, a classic fashion stylish look' },
+{ src: 'IMAGES/RVK MAROON COAT - 22.jpg',    caption: ' Tamil Nadu Vlogger Striking a Stylish Pose',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar holding his blazer lapel, striking a fashion stylish pose in a dark studio' },
+{ src: 'IMAGES/RVK MAROON COAT - 23.jpg',    caption: ' India Model Showcasing a Modern Maroon Jacket',                   alt: 'India model RVK Adventurer looking to the side while holding his maroon jacket, showcasing modern men fashion' },
+{ src: 'IMAGES/RVK MAROON COAT - 24.jpg',    caption: ' Coimbatore Vlogger Adjusting a Stylish Maroon Blazer',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar adjusting his maroon blazer against a black background' },
+{ src: 'IMAGES/RVK MAROON COAT - 25.jpg',    caption: ' Tamil Nadu Model in an Elegant Maroon Suit',                   alt: 'Tamil Nadu model buttoning his maroon suit jacket, highlighting his elegant fashion sense and the best hair style for men' },
+{ src: 'IMAGES/RVK MAROON COAT - 26.jpg',    caption: ' India Vlogger Seated in a Maroon Suit',                   alt: 'India vlogger Raj Vishnu Kumar seated with crossed legs, wearing sunglasses and a fashion stylish maroon suit' },
+{ src: 'IMAGES/RVK MAROON COAT - 27.jpg',    caption: ' Coimbatore Model with an Over the Shoulder Maroon Blazer',                   alt: 'Coimbatore model RVK Adventurer holding his maroon blazer over his shoulder, wearing a crisp white shirt' },
+{ src: 'IMAGES/RVK MAROON COAT - 28.jpg',    caption: ' Tamil Nadu Vlogger in a Stylish Maroon Jacket',                   alt: 'Close up portrait of Tamil Nadu vlogger Raj Vishnu Kumar in a maroon jacket, featuring a fashion stylish aesthetic' },
+{ src: 'IMAGES/RVK MAROON COAT - 29.jpg',    caption: ' India Model in a Stylish Maroon Outfit',                   alt: 'India model looking to the right while seated, wearing sunglasses and a fashion stylish maroon outfit' },
+{ src: 'IMAGES/RVK MAROON COAT - 7.jpg',    caption: ' Sophisticated Maroon Blazer Portrait of a Coimbatore Vlogger',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar buttoning his maroon blazer, a sophisticated studio portrait' },
+{ src: 'IMAGES/RVK MAROON COAT - 8.jpg',    caption: ' Stylish Suit Portrait of a Tamil Nadu Model',                   alt: 'Tamil Nadu model standing with hands in pockets, showing off the best hair style for Men in his stylish suit' },
+{ src: 'IMAGES/RVK MAROON COAT - 9.jpg',    caption: ' Sharp Maroon Blazer Portrait of an India Vlogger',                   alt: 'Fashion stylish India vlogger adjusting his maroon blazer, looking sharply to the side in a dark studio setting' },
 
 
-{ src: 'IMAGES/RVK MAROON COAT - 3.jpg',caption: ' Stylish Maroon Suit Worn by a Tamil Nadu Vlogger ',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar glancing over his shoulder, showcasing the best hair style for Men in his maroon suit' },
-{ src: 'IMAGES/RVK MAROON COAT - 4.jpg',caption: ' Portrait of an India Model in a Stylish Maroon Blazer',                  alt: 'India model RVK Adventurer adjusting his maroon blazer, demonstrating a fashion stylish look on a white backdrop' },
-{ src: 'IMAGES/RVK MAROON COAT - 10.jpg',caption: ' Coimbatore Vlogger Posing in a Maroon Suit',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar wearing sunglasses and a maroon suit, posing confidently with hands in his pockets' },
-{ src: 'IMAGES/RVK MAROON COAT - 11.jpg',caption: ' Tamil Nadu Model Presenting in Formal Wear',                   alt: 'Tamil Nadu model Raj Vishnu Kumar leaning forward in a chair, presenting a fashion stylish pose in formal wear' },
-{ src: 'IMAGES/RVK MAROON COAT - 12.jpg',caption: ' India Vlogger Showcasing a Modern Maroon Blazer Style',                   alt: 'India vlogger Raj Vishnu Kumar relaxing with crossed legs in a maroon blazer, highlighting a modern men fashion look' },
-{ src: 'IMAGES/RVK MAROON COAT - 15.jpg',caption: ' Stylish Seated Portrait of a Coimbatore Model',                   alt: 'RVK Adventurer looking away thoughtfully while seated, a fashion stylish portrait of the Coimbatore model' },
-{ src: 'IMAGES/RVK MAROON COAT - 16.jpg',caption: ' Tamil Nadu Vlogger Wearing a Stylish Maroon Blazer',                   alt: 'Tamil Nadu vlogger wearing sunglasses and a maroon blazer, looking up in a stylish studio pose' },
-{ src: 'IMAGES/RVK MAROON COAT - 17.jpg',caption: ' India Model Fashioning a Stylish Maroon Suit',                   alt: 'India model Raj Vishnu Kumar leaning back in an office chair, showing off a fashion stylish maroon suit' },
-{ src: 'IMAGES/RVK MAROON COAT - 18.jpg',caption: ' Coimbatore Model Seated in a Maroon Blazer',                   alt: 'Profile view of Coimbatore model Raj Vishnu Kumar seated in a chair, wearing a sharp maroon blazer and sunglasses' },
-{ src: 'IMAGES/RVK MAROON COAT - 19.jpg',caption: ' Tamil Nadu Model Sporting a Stylish Maroon Jacket',                   alt: 'Tamil Nadu model adjusting his fashion stylish maroon jacket, an edgy studio portrait featuring RVK Adventurer' },
-{ src: 'IMAGES/RVK MAROON COAT - 20.jpg',caption: ' Portrait of an India Vlogger with the Best Hair Style',                   alt: 'India vlogger Raj Vishnu Kumar standing with hands in his pockets, sporting the best hair style for Men and sunglasses' },
-{ src: 'IMAGES/RVK MAROON COAT - 21.jpg',caption: ' Coimbatore Model in a Classic Maroon Suit Style',                   alt: 'Coimbatore model standing confidently in a maroon suit and white shirt, a classic fashion stylish look' },
-{ src: 'IMAGES/RVK MAROON COAT - 22.jpg',caption: ' Tamil Nadu Vlogger Striking a Stylish Pose',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar holding his blazer lapel, striking a fashion stylish pose in a dark studio' },
-{ src: 'IMAGES/RVK MAROON COAT - 23.jpg',caption: ' India Model Showcasing a Modern Maroon Jacket',                   alt: 'India model RVK Adventurer looking to the side while holding his maroon jacket, showcasing modern men fashion' },
-{ src: 'IMAGES/RVK MAROON COAT - 24.jpg',caption: ' Coimbatore Vlogger Adjusting a Stylish Maroon Blazer',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar adjusting his maroon blazer against a black background' },
-{ src: 'IMAGES/RVK MAROON COAT - 25.jpg',caption: ' Tamil Nadu Model in an Elegant Maroon Suit',                   alt: 'Tamil Nadu model buttoning his maroon suit jacket, highlighting his elegant fashion sense and the best hair style for men' },
-{ src: 'IMAGES/RVK MAROON COAT - 26.jpg',caption: ' India Vlogger Seated in a Maroon Suit',                   alt: 'India vlogger Raj Vishnu Kumar seated with crossed legs, wearing sunglasses and a fashion stylish maroon suit' },
-{ src: 'IMAGES/RVK MAROON COAT - 27.jpg',caption: ' Coimbatore Model with an Over the Shoulder Maroon Blazer',                   alt: 'Coimbatore model RVK Adventurer holding his maroon blazer over his shoulder, wearing a crisp white shirt' },
-{ src: 'IMAGES/RVK MAROON COAT - 28.jpg',caption: ' Tamil Nadu Vlogger in a Stylish Maroon Jacket',                   alt: 'Close up portrait of Tamil Nadu vlogger Raj Vishnu Kumar in a maroon jacket, featuring a fashion stylish aesthetic' },
-{ src: 'IMAGES/RVK MAROON COAT - 29.jpg',caption: ' India Model in a Stylish Maroon Outfit',                   alt: 'India model looking to the right while seated, wearing sunglasses and a fashion stylish maroon outfit' },
-{ src: 'IMAGES/RVK MAROON COAT - 7.jpg',caption: ' Sophisticated Maroon Blazer Portrait of a Coimbatore Vlogger',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar buttoning his maroon blazer, a sophisticated studio portrait' },
-{ src: 'IMAGES/RVK MAROON COAT - 8.jpg',caption: ' Stylish Suit Portrait of a Tamil Nadu Model',                   alt: 'Tamil Nadu model standing with hands in pockets, showing off the best hair style for Men in his stylish suit' },
-{ src: 'IMAGES/RVK MAROON COAT - 9.jpg',caption: ' Sharp Maroon Blazer Portrait of an India Vlogger',                   alt: 'Fashion stylish India vlogger adjusting his maroon blazer, looking sharply to the side in a dark studio setting' },
-
-
-{ src: 'IMAGES/RVK WHITE - 10.jpg',caption: ' Coimbatore Model in a Stylish White Shirt',                   alt: 'RVK Adventurer standing with arms crossed in a white shirt and maroon pants, a confident pose by the Coimbatore model' },
-{ src: 'IMAGES/RVK WHITE - 11.jpg',caption: ' Tamil Nadu Vlogger in a Stylish White Shirt',                   alt: 'Tamil Nadu vlogger side profile in a white shirt, showcasing the best hair style for Men against a white background' },
-{ src: 'IMAGES/RVK WHITE - 12.jpg',caption: ' India Model Looking Back in White',                   alt: 'India model Raj Vishnu Kumar looking back over his shoulder, wearing a white shirt and maroon pants' },
-{ src: 'IMAGES/RVK WHITE - 13.jpg',caption: ' Coimbatore Model Posing in a White Shirt',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, standing with hands in pockets in a white shirt and maroon pants' },
-{ src: 'IMAGES/RVK WHITE - 2.jpg',caption: ' Tamil Nadu Vlogger in a Crisp White Shirt',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking to the side, showcasing a fashion stylish look in a crisp white shirt' },
-{ src: 'IMAGES/RVK WHITE - 3.jpg',caption: ' Stylish White Shirt Profile of an India Model',                   alt: 'Side profile of India model RVK Adventurer, highlighting the best hair style for Men in a white shirt' },
-{ src: 'IMAGES/RVK WHITE - 4.jpg',caption: ' Coimbatore Vlogger in a Casual White Shirt',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar looking back over his shoulder, wearing a casual white shirt and red pants' },
-{ src: 'IMAGES/RVK WHITE - 5.jpg',caption: ' Stylish White Outfit Portrait of an India Model',                   alt: 'India model Raj Vishnu Kumar standing with arms crossed, presenting a fashion stylish portrait in a white outfit' },
-{ src: 'IMAGES/RVK WHITE - 7.jpg',caption: ' Tamil Nadu Model Enjoying a Ride in a White Shirt',                   alt: 'RVK Adventurer, a Tamil Nadu model, sitting confidently on a motorcycle wearing a white shirt and sunglasses' },
-{ src: 'IMAGES/RVK WHITE - 8.jpg',caption: ' Riding a Yamaha FZ V3 Dark Knight',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar ready to ride a Yamaha FZ V3 Dark Knight Bike, showcasing a fashion stylish outdoor lifestyle' },
+{ src: 'IMAGES/RVK WHITE - 10.jpg',    caption: ' Coimbatore Model in a Stylish White Shirt',                   alt: 'RVK Adventurer standing with arms crossed in a white shirt and maroon pants, a confident pose by the Coimbatore model' },
+{ src: 'IMAGES/RVK WHITE - 11.jpg',    caption: ' Tamil Nadu Vlogger in a Stylish White Shirt',                   alt: 'Tamil Nadu vlogger side profile in a white shirt, showcasing the best hair style for Men against a white background' },
+{ src: 'IMAGES/RVK WHITE - 12.jpg',    caption: ' India Model Looking Back in White',                   alt: 'India model Raj Vishnu Kumar looking back over his shoulder, wearing a white shirt and maroon pants' },
+{ src: 'IMAGES/RVK WHITE - 13.jpg',    caption: ' Coimbatore Model Posing in a White Shirt',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, standing with hands in pockets in a white shirt and maroon pants' },
+{ src: 'IMAGES/RVK WHITE - 2.jpg',    caption: ' Tamil Nadu Vlogger in a Crisp White Shirt',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking to the side, showcasing a fashion stylish look in a crisp white shirt' },
+{ src: 'IMAGES/RVK WHITE - 3.jpg',    caption: ' Stylish White Shirt Profile of an India Model',                   alt: 'Side profile of India model RVK Adventurer, highlighting the best hair style for Men in a white shirt' },
+{ src: 'IMAGES/RVK WHITE - 4.jpg',    caption: ' Coimbatore Vlogger in a Casual White Shirt',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar looking back over his shoulder, wearing a casual white shirt and red pants' },
+{ src: 'IMAGES/RVK WHITE - 5.jpg',    caption: ' Stylish White Outfit Portrait of an India Model',                   alt: 'India model Raj Vishnu Kumar standing with arms crossed, presenting a fashion stylish portrait in a white outfit' },
+{ src: 'IMAGES/RVK WHITE - 7.jpg',    caption: ' Tamil Nadu Model Enjoying a Ride in a White Shirt',                   alt: 'RVK Adventurer, a Tamil Nadu model, sitting confidently on a motorcycle wearing a white shirt and sunglasses' },
+{ src: 'IMAGES/RVK WHITE - 8.jpg',    caption: ' Riding a Yamaha FZ V3 Dark Knight',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar ready to ride a Yamaha FZ V3 Dark Knight Bike, showcasing a fashion stylish outdoor lifestyle' },
 
 
 
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTO SHOOT.jpg',caption: ' Posing with a Yamaha FZ V3 Bike',                   alt: 'India vlogger RVK Adventurer posing next to a Yamaha FZ V3 Dark Knight Bike in a natural outdoor setting, wearing a white shirt' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 1.jpg',caption: ' Outdoor Style with a Yamaha FZ V3 Bike',                   alt: 'Tamil Nadu model standing near a black Yamaha FZ V3 Dark Knight Bike outdoors, presenting a fashion stylish travel look' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 2.jpg',caption: ' Posing with a Yamaha FZ V3 and a Royal Enfield',                   alt: 'Coimbatore model posing between Yamaha FZ V3 Dark Knight Bike and Royal Enfield Meteor in a rural setting, a fashion stylish portrait of an India vlogger' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 3.jpg',caption: ' Leaning on a Yamaha FZ V3 Bike',                   alt: 'Raj Vishnu Kumar, a Tamil Nadu vlogger, leaning comfortably on a Yamaha FZ V3 Dark Knight Bike while wearing sunglasses' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 6.jpg',caption: ' Rugged Style with a Yamaha FZ V3 Bike',                   alt: 'India model RVK Adventurer standing with one foot on his Yamaha FZ V3 Dark Knight Bike, showcasing a rugged fashion stylish aesthetic' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT.jpg',caption: ' Seated on a Yamaha FZ V3 Bike',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar seated on his Yamaha FZ V3 Dark Knight Bike outdoors, demonstrating the best hair style for Men' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE WHITE - 1.jpg',caption: ' Tamil Nadu Model Showcasing a Hair Bun Style',                   alt: 'Side profile of Tamil Nadu model Raj Vishnu Kumar with a hair bun, wearing glasses and a white shirt' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE WHITE - 2.jpg',caption: ' Stylish Wooden Background Portrait of an India Model',                   alt: 'India model RVK Adventurer looking down thoughtfully, a fashion stylish portrait against a wooden background' },
-{ src: 'IMAGES/LONG HAIR.jpg',caption: ' Coimbatore Model with a Stylish Long Hair Look',                   alt: 'Coimbatore model Raj Vishnu Kumar looking to the right, highlighting the best hair style for Men indoors' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTO SHOOT.jpg',    caption: ' Posing with a Yamaha FZ V3 Bike',                   alt: 'India vlogger RVK Adventurer posing next to a Yamaha FZ V3 Dark Knight Bike in a natural outdoor setting, wearing a white shirt' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 1.jpg',    caption: ' Outdoor Style with a Yamaha FZ V3 Bike',                   alt: 'Tamil Nadu model standing near a black Yamaha FZ V3 Dark Knight Bike outdoors, presenting a fashion stylish travel look' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 2.jpg',    caption: ' Posing with a Yamaha FZ V3 and a Royal Enfield',                   alt: 'Coimbatore model posing between Yamaha FZ V3 Dark Knight Bike and Royal Enfield Meteor in a rural setting, a fashion stylish portrait of an India vlogger' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 3.jpg',    caption: ' Leaning on a Yamaha FZ V3 Bike',                   alt: 'Raj Vishnu Kumar, a Tamil Nadu vlogger, leaning comfortably on a Yamaha FZ V3 Dark Knight Bike while wearing sunglasses' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 6.jpg',    caption: ' Rugged Style with a Yamaha FZ V3 Bike',                   alt: 'India model RVK Adventurer standing with one foot on his Yamaha FZ V3 Dark Knight Bike, showcasing a rugged fashion stylish aesthetic' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT.jpg',    caption: ' Seated on a Yamaha FZ V3 Bike',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar seated on his Yamaha FZ V3 Dark Knight Bike outdoors, demonstrating the best hair style for Men' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE WHITE - 1.jpg',    caption: ' Tamil Nadu Model Showcasing a Hair Bun Style',                   alt: 'Side profile of Tamil Nadu model Raj Vishnu Kumar with a hair bun, wearing glasses and a white shirt' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE WHITE - 2.jpg',    caption: ' Stylish Wooden Background Portrait of an India Model',                   alt: 'India model RVK Adventurer looking down thoughtfully, a fashion stylish portrait against a wooden background' },
+{ src: 'IMAGES/LONG HAIR.jpg',    caption: ' Coimbatore Model with a Stylish Long Hair Pony Tail and Beard Look',                   alt: 'Coimbatore model Raj Vishnu Kumar looking to the right, highlighting the best hair style for Men indoors' },
 
 
-{ src: 'IMAGES/RVK BLACK - 1.jpg',caption: ' Tamil Nadu Vlogger Wearing a Black Shirt',                   alt: 'Tamil Nadu vlogger adjusting his sunglasses, a fashion stylish portrait in a dark black shirt' },
-{ src: 'IMAGES/RVK BLACK - 10.jpg',caption: ' India Model in a Patterned Black Shirt Style',                   alt: 'India model Raj Vishnu Kumar standing confidently in a dark patterned black shirt against a clean white backdrop' },
-{ src: 'IMAGES/RVK BLACK - 12.jpg',caption: ' Stylish Black Shirt Profile of a Coimbatore Vlogger',                   alt: 'Side profile of Coimbatore vlogger RVK Adventurer with arms crossed, showcasing a fashion stylish dark black shirt' },
-{ src: 'IMAGES/RVK BLACK - 15.jpg',caption: ' Tamil Nadu Model in a Stylish Black Outfit',                   alt: 'Raj Vishnu Kumar, a Tamil Nadu model, looking stylish with hands in his pockets' },
-{ src: 'IMAGES/RVK BLACK - 17.jpg',caption: ' India Vlogger Presenting a Black Shirt and Beard Style',                   alt: 'India vlogger standing with hands in pockets, presenting the best hair style and Beard Style for Men in a black shirt' },
-{ src: 'IMAGES/RVK BLACK - 18.jpg',caption: ' Dark Studio Portrait Style of a Coimbatore Model',                   alt: 'Coimbatore model Raj Vishnu Kumar turning his head to the left, a fashion stylish studio portrait' },
-{ src: 'IMAGES/RVK BLACK - 21.jpg',caption: ' Tamil Nadu Vlogger in a Casual Black Outfit',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing with arms crossed, exuding confidence in a dark black casual outfit' },
-{ src: 'IMAGES/RVK BLACK - 23.jpg',caption: ' India Model Wearing a Patterned Black Shirt',                   alt: 'India model Raj Vishnu Kumar holding his hands together, a fashion stylish pose in a black patterned shirt' },
-{ src: 'IMAGES/RVK BLACK - 24.jpg',caption: ' Coimbatore Vlogger Looking Back in a Black Shirt',                   alt: 'Coimbatore vlogger looking back over his shoulder, highlighting the best hair style for Men and a dark black shirt' },
-{ src: 'IMAGES/RVK BLACK - 26.jpg',caption: ' Tamil Nadu Model Posing in a Black Shirt',                   alt: 'Raj Vishnu Kumar, a fashion stylish Tamil Nadu model, wearing sunglasses and a black shirt' },
-{ src: 'IMAGES/RVK BLACK - 27.jpg',caption: ' India Vlogger in a Dark Sunglasses Portrait Style',                   alt: 'India vlogger RVK Adventurer adjusting his dark sunglasses, a modern fashion stylish portrait against a white background' },
-{ src: 'IMAGES/RVK BLACK - 28.jpg',caption: ' Coimbatore Model with a Stylish Black Shirt and Beard',                   alt: 'Side profile of Raj Vishnu Kumar, a fashion stylish Coimbatore model, standing with arms crossed in a dark black shirt and stylish beard' },
-{ src: 'IMAGES/RVK BLACK - 3.jpg',caption: ' Tamil Nadu Vlogger with a Stylish Hair Look',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking away with hands in his pockets, showcasing the best hair style for Men' },
-{ src: 'IMAGES/RVK BLACK - 5.jpg',caption: ' India Model in a Confident White Background Pose',                   alt: 'India model RVK Adventurer posing confidently with hands in pockets against a crisp white background' },
-{ src: 'IMAGES/RVK BLACK - 6.jpg',caption: ' Dark Button Up Portrait of a Coimbatore Vlogger',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar looking at the camera in a dark button-up shirt, a fashion stylish studio portrait' },
-{ src: 'IMAGES/RVK BLACK - 7.jpg',caption: ' Tamil Nadu Model Presenting a Rugged Stylish Look',                   alt: 'Tamil Nadu model standing straight with arms crossed, presenting a rugged and fashion stylish look' },
-{ src: 'IMAGES/RVK BLACK - 9.jpg',caption: ' Dark Outfit Portrait Style of an India Vlogger',                   alt: 'Raj Vishnu Kumar, an India vlogger, looking directly at the camera with arms crossed in a dark outfit' },
+{ src: 'IMAGES/RVK BLACK - 1.jpg',    caption: ' Tamil Nadu Vlogger Wearing a Black Shirt',                   alt: 'Tamil Nadu vlogger adjusting his sunglasses, a fashion stylish portrait in a dark black shirt' },
+{ src: 'IMAGES/RVK BLACK - 10.jpg',    caption: ' India Model in a Patterned Black Shirt Style',                   alt: 'India model Raj Vishnu Kumar standing confidently in a dark patterned black shirt against a clean white backdrop' },
+{ src: 'IMAGES/RVK BLACK - 12.jpg',    caption: ' Stylish Black Shirt Profile of a Coimbatore Vlogger',                   alt: 'Side profile of Coimbatore vlogger RVK Adventurer with arms crossed, showcasing a fashion stylish dark black shirt' },
+{ src: 'IMAGES/RVK BLACK - 15.jpg',    caption: ' Tamil Nadu Model in a Stylish Black Outfit',                   alt: 'Raj Vishnu Kumar, a Tamil Nadu model, looking stylish with hands in his pockets' },
+{ src: 'IMAGES/RVK BLACK - 17.jpg',    caption: ' India Vlogger Presenting a Black Shirt and Beard Style',                   alt: 'India vlogger standing with hands in pockets, presenting the best hair style and Beard Style for Men in a black shirt' },
+{ src: 'IMAGES/RVK BLACK - 18.jpg',    caption: ' Dark Studio Portrait Style of a Coimbatore Model',                   alt: 'Coimbatore model Raj Vishnu Kumar turning his head to the left, a fashion stylish studio portrait' },
+{ src: 'IMAGES/RVK BLACK - 21.jpg',    caption: ' Tamil Nadu Vlogger in a Casual Black Outfit',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing with arms crossed, exuding confidence in a dark black casual outfit' },
+{ src: 'IMAGES/RVK BLACK - 23.jpg',    caption: ' India Model Wearing a Patterned Black Shirt',                   alt: 'India model Raj Vishnu Kumar holding his hands together, a fashion stylish pose in a black patterned shirt' },
+{ src: 'IMAGES/RVK BLACK - 24.jpg',    caption: ' Coimbatore Vlogger Looking Back in a Black Shirt',                   alt: 'Coimbatore vlogger looking back over his shoulder, highlighting the best hair style for Men and a dark black shirt' },
+{ src: 'IMAGES/RVK BLACK - 26.jpg',    caption: ' Tamil Nadu Model Posing in a Black Shirt',                   alt: 'Raj Vishnu Kumar, a fashion stylish Tamil Nadu model, wearing sunglasses and a black shirt' },
+{ src: 'IMAGES/RVK BLACK - 27.jpg',    caption: ' India Vlogger in a Dark Sunglasses Portrait Style',                   alt: 'India vlogger RVK Adventurer adjusting his dark sunglasses, a modern fashion stylish portrait against a white background' },
+{ src: 'IMAGES/RVK BLACK - 28.jpg',    caption: ' Coimbatore Model with a Stylish Black Shirt and Beard',                   alt: 'Side profile of Raj Vishnu Kumar, a fashion stylish Coimbatore model, standing with arms crossed in a dark black shirt and stylish beard' },
+{ src: 'IMAGES/RVK BLACK - 3.jpg',    caption: ' Tamil Nadu Vlogger with a Stylish Hair Look',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking away with hands in his pockets, showcasing the best hair style for Men' },
+{ src: 'IMAGES/RVK BLACK - 5.jpg',    caption: ' India Model in a Confident White Background Pose',                   alt: 'India model RVK Adventurer posing confidently with hands in pockets against a crisp white background' },
+{ src: 'IMAGES/RVK BLACK - 6.jpg',    caption: ' Dark Button Up Portrait of a Coimbatore Vlogger',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar looking at the camera in a dark button-up shirt, a fashion stylish studio portrait' },
+{ src: 'IMAGES/RVK BLACK - 7.jpg',    caption: ' Tamil Nadu Model Presenting a Rugged Stylish Look',                   alt: 'Tamil Nadu model standing straight with arms crossed, presenting a rugged and fashion stylish look' },
+{ src: 'IMAGES/RVK BLACK - 9.jpg',    caption: ' Dark Outfit Portrait Style of an India Vlogger',                   alt: 'Raj Vishnu Kumar, an India vlogger, looking directly at the camera with arms crossed in a dark outfit' },
 
 
-{ src: 'IMAGES/KOLLENGODE - 1.jpg',caption: ' Wearing a Pink Shirt at the Kollengode Thamarapadam Viewpoint',                   alt: 'RVK Adventurer, an India vlogger, standing under a decorative archway at Kerala Thamarapadam view point tourist attraction in Kollengode, wearing a bright pink shirt' },
-{ src: 'IMAGES/KOLLENGODE - 2.jpg',caption: ' Relaxing at the Kerala Kollengode Thamarapadam Viewpoint',                   alt: 'Coimbatore model Raj Vishnu Kumar relaxing at the scenic Thamarapadam view point in Kollengode, Kerala, showing off a fashion stylish look' },
-{ src: 'IMAGES/KOLLENGODE - 3.jpg',caption: ' Posing by the Blue Railing at the Kerala Thamarapadam Viewpoint',                   alt: 'Tamil Nadu model Raj Vishnu Kumar leaning on a blue railing at Kollengode famous Thamarapadam view point tourist attraction in Kerala' },
-{ src: 'IMAGES/KOLLENGODE - 5.jpg',caption: ' Exploring the Kollengode Thamarapadam Viewpoint in Kerala',                   alt: 'India model Raj Vishnu Kumar exploring Kerala Thamarapadam view point tourist attraction in Kollengode, wearing a fashion stylish pink shirt' },
-{ src: 'IMAGES/KOLLENGODE - 6.jpg',caption: ' Wearing Bright Pink at the Kollengode Thamarapadam Viewpoint',                   alt: 'Coimbatore vlogger RVK Adventurer posing at the scenic Thamarapadam view point tourist attraction in Kollengode, Kerala, showcasing a bright pink outfit' },
-{ src: 'IMAGES/KOLLENGODE - 7.jpg',caption: ' Presenting a Stylish Look at the Kerala Thamarapadam Viewpoint',                   alt: 'Tamil Nadu model Raj Vishnu Kumar standing confidently at Kerala Thamarapadam view point in Kollengode, highlighting the best hair style for Men' },
-{ src: 'IMAGES/KOLLENGODE - 8.jpg',caption: ' Walking Through the Archways at the Kollengode Thamarapadam Viewpoint',                   alt: 'Fashion stylish Coimbatore model Raj Vishnu Kumar walking through the archways at Kerala Thamarapadam view point tourist attraction located in Kollengode' },
-{ src: 'IMAGES/KOLLENGODE - 9.jpg',caption: ' Admiring the Kollengode Thamarapadam Viewpoint in Kerala',                   alt: 'RVK Adventurer, an India vlogger, admiring the natural landscape at Kollengode Thamarapadam view point tourist attraction in Kerala' },
-{ src: 'IMAGES/KOLLENGODE RVK ADVENTURER.jpg',caption: 'Beautiful Kollengode Thamarapadam Viewpoint in Kerala',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking back at the camera while visiting the beautiful Thamarapadam view point tourist attraction in Kollengode, Kerala' },
+{ src: 'IMAGES/KOLLENGODE - 1.jpg',    caption: ' Wearing a Pink Shirt at the Kollengode Thamarapadam Viewpoint',                   alt: 'RVK Adventurer, an India vlogger, standing under a decorative archway at Kerala Thamarapadam view point tourist attraction in Kollengode, wearing a bright pink shirt' },
+{ src: 'IMAGES/KOLLENGODE - 2.jpg',    caption: ' Relaxing at the Kerala Kollengode Thamarapadam Viewpoint',                   alt: 'Coimbatore model Raj Vishnu Kumar relaxing at the scenic Thamarapadam view point in Kollengode, Kerala, showing off a fashion stylish look' },
+{ src: 'IMAGES/KOLLENGODE - 3.jpg',    caption: ' Posing by the Blue Railing at the Kerala Thamarapadam Viewpoint',                   alt: 'Tamil Nadu model Raj Vishnu Kumar leaning on a blue railing at Kollengode famous Thamarapadam view point tourist attraction in Kerala' },
+{ src: 'IMAGES/KOLLENGODE - 5.jpg',    caption: ' Exploring the Kollengode Thamarapadam Viewpoint in Kerala',                   alt: 'India model Raj Vishnu Kumar exploring Kerala Thamarapadam view point tourist attraction in Kollengode, wearing a fashion stylish pink shirt' },
+{ src: 'IMAGES/KOLLENGODE - 6.jpg',    caption: ' Wearing Bright Pink Dress at the Kollengode Thamarapadam Viewpoint',                   alt: 'Coimbatore vlogger RVK Adventurer posing at the scenic Thamarapadam view point tourist attraction in Kollengode, Kerala, showcasing a bright pink outfit' },
+{ src: 'IMAGES/KOLLENGODE - 7.jpg',    caption: ' Presenting a Stylish Look at the Kerala Thamarapadam Viewpoint',                   alt: 'Tamil Nadu model Raj Vishnu Kumar standing confidently at Kerala Thamarapadam view point in Kollengode, highlighting the best hair style for Men' },
+{ src: 'IMAGES/KOLLENGODE - 8.jpg',    caption: ' Walking Through the Archways at the Kollengode Thamarapadam Viewpoint',                   alt: 'Fashion stylish Coimbatore model Raj Vishnu Kumar walking through the archways at Kerala Thamarapadam view point tourist attraction located in Kollengode' },
+{ src: 'IMAGES/KOLLENGODE - 9.jpg',    caption: ' Admiring the Kollengode Thamarapadam Viewpoint in Kerala',                   alt: 'RVK Adventurer, an India vlogger, admiring the natural landscape at Kollengode Thamarapadam view point tourist attraction in Kerala' },
+{ src: 'IMAGES/KOLLENGODE RVK ADVENTURER.jpg',    caption: 'Beautiful Kollengode Thamarapadam Viewpoint in Kerala',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking back at the camera while visiting the beautiful Thamarapadam view point tourist attraction in Kollengode, Kerala' },
 
 
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 1.jpg',caption: ' Stylish Indoor Portrait in a Dark Polo',                   alt: 'Coimbatore model Raj Vishnu Kumar wearing glasses and a dark polo shirt, presenting a fashion stylish indoor portrait' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 2.jpg',caption: ' Dark Polo Profile Featuring the Best Hair',                   alt: 'Side profile of India model RVK Adventurer in a dark casual polo, demonstrating the best hair style for Men' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 3.jpg',caption: ' Showcasing a Stylish Look in a Dark Polo Shirt',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking fashion stylish in a comfortable dark polo shirt and round glasses' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 4.jpg',caption: ' Coimbatore Model Wearing a Dark Polo Shirt',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, wearing glasses and a dark polo shirt against a plain background' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 6.jpg',caption: ' Showcasing a Stylish Casual Polo and Hair Look',                   alt: 'Tamil Nadu vlogger RVK Adventurer looking slightly to the side, showcasing the best hair style for Men in a casual polo' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 8.jpg',caption: ' Thoughtful Portrait in a Dark Collared Shirt',                   alt: 'India model Raj Vishnu Kumar looking thoughtfully away, presenting a fashion stylish portrait in a dark collared shirt' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 9.jpg',caption: ' Confident Pose in a Dark Polo Shirt',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar posing confidently in a dark polo, highlighting the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER WATERSLIDE.jpg',caption: ' Enjoying Waterfall Slide Fun at Kovai Kutralam',                   alt: 'RVK Adventurer, an India vlogger, enjoying the forest waterfall slide at Kovai Kutralam' },
-{ src: 'IMAGES/RVK ADVENTURER BLACK AND BLACK.jpeg',caption: ' Wearing a Black Outfit at the Pollachi Valparai Hills',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, wearing an black and black outfit at Valparai, an attractive hill spot in Pollachi' },
-{ src: 'IMAGES/RVK ADVENTURER VAALPAARAI.jpg',caption: ' Showcasing a Stylish Outfit at the Pollachi Valparai Spot',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, wearing an black and black outfit at Valparai, an attractive hill spot in Pollachi' },
-{ src: 'IMAGES/RVK ADVENTURER CELEBRITY CLUB COIMBATORE.jpg',caption: ' Relaxing at the Celebrity Resort in Alandurai',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar relaxing at the Celebrity Resort on Siruvani Road in Alandurai' },
-{ src: 'IMAGES/RVK ADVENTURER DOCTOR BLACK.jpeg',caption: ' Presenting a Smart Look with Glasses and Style',                   alt: 'Tamil Nadu model RVK Adventurer showcasing a smart, intelligent look with glasses and the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER NATURE BLACK.jpg',caption: ' Trekking Through the Lush Forest at Kovai Kutralam',                   alt: 'India model RVK Adventurer trekking through the lush forest of Kovai Kutralam' },
-{ src: 'IMAGES/RVK BLACK BEARD.jpeg',caption: ' Side Pose Showing a Stylish Beard Trim',                   alt: 'Side pose of Tamil Nadu vlogger Raj Vishnu Kumar, highlighting the best beard trim and a fashion stylish look' },
-{ src: 'IMAGES/RVK SIDE BEARD NATURE.jpeg',caption: ' Coimbatore Model at the Nellithurai River Bridge',                   alt: 'Coimbatore model Raj Vishnu Kumar at Nellithurai River Bridge' },
-{ src: 'IMAGES/RVK ADVENTURER TREK.jpg',caption: ' Enjoying a Forest Trek Outdoors at Kovai Kutralam',                   alt: 'Coimbatore model Raj Vishnu Kumar exploring the outdoors during a forest trek at Kovai Kutralam' },
-{ src: 'IMAGES/RVK ADVENTURER TREKKING.jpg',caption: ' Taking a Nature Walk Trekking at Kovai Kutralam',                   alt: 'India vlogger Raj Vishnu Kumar enjoying a nature walk while forest trekking at Kovai Kutralam' },
-{ src: 'IMAGES/RVK ADVENTURER ALIYAR.jpeg',caption: ' Showcasing Stunning Long Hair at the Aliyar Dam',                   alt: 'RVK Adventurer, a Tamil Nadu model, showcasing a stunning long hair look and the best hair style for Men at Pollachi Aliyar Dam' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 1.jpg',    caption: ' Stylish Indoor Portrait in a Dark Polo',                   alt: 'Coimbatore model Raj Vishnu Kumar wearing glasses and a dark polo shirt, presenting a fashion stylish indoor portrait' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 2.jpg',    caption: ' Dark Polo Profile Featuring the Best Hair',                   alt: 'Side profile of India model RVK Adventurer in a dark casual polo, demonstrating the best hair style for Men' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 3.jpg',    caption: ' Showcasing a Stylish Look in a Dark Polo Shirt',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar looking fashion stylish in a comfortable dark polo shirt and round glasses' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 4.jpg',    caption: ' Coimbatore Model Wearing a Dark Polo Shirt',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, wearing glasses and a dark polo shirt against a plain background' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 6.jpg',    caption: ' Showcasing a Stylish Casual Polo and Hair Style Look',                   alt: 'Tamil Nadu vlogger RVK Adventurer looking slightly to the side, showcasing the best hair style for Men in a casual polo' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 8.jpg',    caption: ' Thoughtful Portrait in a Dark Collared Shirt',                   alt: 'India model Raj Vishnu Kumar looking thoughtfully away, presenting a fashion stylish portrait in a dark collared shirt' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE - 9.jpg',    caption: ' Confident Pose in a Dark Polo Shirt',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar posing confidently in a dark polo, highlighting the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER WATERSLIDE.jpg',    caption: ' Enjoying Waterfall Slide Fun at Kovai Kutralam',                   alt: 'RVK Adventurer, an India vlogger, enjoying the forest waterfall slide at Kovai Kutralam' },
+{ src: 'IMAGES/RVK ADVENTURER BLACK AND BLACK.jpeg',    caption: ' Wearing a Black Outfit at the Pollachi Valparai Hills',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, wearing an black and black outfit at Valparai, an attractive hill spot in Pollachi' },
+{ src: 'IMAGES/RVK ADVENTURER VAALPAARAI.jpg',    caption: ' Showcasing a Stylish Outfit at the Pollachi Valparai Spot',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, wearing an black and black outfit at Valparai, an attractive hill spot in Pollachi' },
+{ src: 'IMAGES/RVK ADVENTURER CELEBRITY CLUB COIMBATORE.jpg',    caption: ' Relaxing at the Celebrity Resort in Alandurai',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar relaxing at the Celebrity Resort on Siruvani Road in Alandurai' },
+{ src: 'IMAGES/RVK ADVENTURER DOCTOR BLACK.jpeg',    caption: ' Presenting a Smart Look with Glasses and Style',                   alt: 'Tamil Nadu model RVK Adventurer showcasing a smart, intelligent look with glasses and the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER NATURE BLACK.jpg',    caption: ' Trekking Through the Lush Forest at Kovai Kutralam',                   alt: 'India model RVK Adventurer trekking through the lush forest of Kovai Kutralam' },
+{ src: 'IMAGES/RVK BLACK BEARD.jpeg',    caption: ' Side Pose Showing a Stylish Beard Trim',                   alt: 'Side pose of Tamil Nadu vlogger Raj Vishnu Kumar, highlighting the best beard trim and a fashion stylish look' },
+{ src: 'IMAGES/RVK SIDE BEARD NATURE.jpeg',    caption: ' Coimbatore Model at the Nellithurai River Bridge',                   alt: 'Coimbatore model Raj Vishnu Kumar at Nellithurai River Bridge' },
+{ src: 'IMAGES/RVK ADVENTURER TREK.jpg',    caption: ' Enjoying a Forest Trek Outdoors at Kovai Kutralam',                   alt: 'Coimbatore model Raj Vishnu Kumar exploring the outdoors during a forest trek at Kovai Kutralam' },
+{ src: 'IMAGES/RVK ADVENTURER TREKKING.jpg',    caption: ' Taking a Nature Walk Trekking at Kovai Kutralam',                   alt: 'India vlogger Raj Vishnu Kumar enjoying a nature walk while forest trekking at Kovai Kutralam' },
+{ src: 'IMAGES/RVK ADVENTURER ALIYAR.jpeg',    caption: ' Showcasing Stunning Long Hair at the Aliyar Dam',                   alt: 'RVK Adventurer, a Tamil Nadu model, showcasing a stunning long hair look and the best hair style for Men at Pollachi Aliyar Dam' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER DENIM.jpeg',caption: ' Presenting a Stylish Open Black Denim Shirt Look',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, looking away while wearing sunglasses and an open black denim shirt' },
-{ src: 'IMAGES/RVK ADVENTURER DENIM - 2.jpeg',caption: ' Confident Smile in a Black Denim Shirt',                   alt: 'Tamil Nadu vlogger RVK Adventurer smiling confidently, showcasing the best hair style for Men in a black denim shirt' },
-{ src: 'IMAGES/RVK ADVENTURER DENIM - 3.jpeg',caption: ' Stylish Black Denim Shirt Portrait Pose',                   alt: 'India model Raj Vishnu Kumar striking a fashion stylish pose against a yellow wall, wearing a black denim shirt and sunglasses' },
-{ src: 'IMAGES/RVK ADVENTURER YERCAUD - 3.jpeg',caption: ' Blue Shirt Style in Yercaud Salem',                   alt: 'RVK Adventurer, an India vlogger, posing on a large tree during his travels in Yercaud in Salem, wearing a fashion stylish blue shirt' },
-{ src: 'IMAGES/RVK ADVENTURER YERCAUD - 5.jpeg',caption: ' Rugged Look at the Yercaud Kiliyur Waterfall',                   alt: 'Coimbatore model Raj Vishnu Kumar visiting the scenic Kiliyur waterfall in Yercaud Salem, showcasing a rugged outdoor look' },
-{ src: 'IMAGES/RVK ADVENTURER YERCAUD - 6.jpg',caption: ' Walking on a Hill Station Road in Yercaud Salem',                   alt: 'Tamil Nadu model RVK Adventurer standing on a beautiful hill station road in Yercaud in Salem, presenting a fashion stylish travel portrait' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 3.jpeg',caption: ' Stylish Blue Shirt and Spectacles Profile',                   alt: 'Side profile of India model Raj Vishnu Kumar wearing spectacles and a blue shirt, featuring the best hair style for Men' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 4.jpeg',caption: ' Thoughtful Blue Button Up Shirt Portrait',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar looking away thoughtfully in a classic blue button-up shirt' },
-{ src: 'IMAGES/RVK ADVENTURER CLOSEUP.jpeg',caption: ' Confident Look in a Blue Denim Jacket',                   alt: 'Close up portrait of Tamil Nadu vlogger Raj Vishnu Kumar in a blue denim jacket, presenting a confident and fashion stylish look' },
+{ src: 'IMAGES/RVK ADVENTURER DENIM.jpeg',    caption: ' Presenting a Stylish Open Black Denim Shirt Look',                   alt: 'Raj Vishnu Kumar, a fashion stylish Coimbatore model, looking away while wearing sunglasses and an open black denim shirt' },
+{ src: 'IMAGES/RVK ADVENTURER DENIM - 2.jpeg',    caption: ' Confident Smile in a Black Denim Shirt',                   alt: 'Tamil Nadu vlogger RVK Adventurer smiling confidently, showcasing the best hair style for Men in a black denim shirt' },
+{ src: 'IMAGES/RVK ADVENTURER DENIM - 3.jpeg',    caption: ' Stylish Black Denim Shirt Portrait Pose',                   alt: 'India model Raj Vishnu Kumar striking a fashion stylish pose against a yellow wall, wearing a black denim shirt and sunglasses' },
+{ src: 'IMAGES/RVK ADVENTURER YERCAUD - 3.jpeg',    caption: ' Blue Shirt Style in Yercaud Salem',                   alt: 'RVK Adventurer, an India vlogger, posing on a large tree during his travels in Yercaud in Salem, wearing a fashion stylish blue shirt' },
+{ src: 'IMAGES/RVK ADVENTURER YERCAUD - 5.jpeg',    caption: ' Rugged Look at the Yercaud Kiliyur Waterfall',                   alt: 'Coimbatore model Raj Vishnu Kumar visiting the scenic Kiliyur waterfall in Yercaud Salem, showcasing a rugged outdoor look' },
+{ src: 'IMAGES/RVK ADVENTURER YERCAUD - 6.jpg',    caption: ' Walking on a Hill Station Road in Yercaud Salem',                   alt: 'Tamil Nadu model RVK Adventurer standing on a beautiful hill station road in Yercaud in Salem, presenting a fashion stylish travel portrait' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 3.jpeg',    caption: ' Stylish Blue Shirt and Spectacles Profile',                   alt: 'Side profile of India model Raj Vishnu Kumar wearing spectacles and a blue shirt, featuring the best hair style for Men' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 4.jpeg',    caption: ' Thoughtful Blue Button Up Shirt Portrait',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar looking away thoughtfully in a classic blue button-up shirt' },
+{ src: 'IMAGES/RVK ADVENTURER CLOSEUP.jpeg',    caption: ' Confident Look in a Blue Denim Jacket',                   alt: 'Close up portrait of Tamil Nadu vlogger Raj Vishnu Kumar in a blue denim jacket, presenting a confident and fashion stylish look' },
 
 
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE COIMBATORE - 3.jpg',caption: ' Presenting a Cute Smile and a Ponytail Hair Style',                   alt: 'India model Raj Vishnu Kumar showing off the best hair style for Men with a ponytail and a cute smile in this fashion stylish portrait' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE COIMBATORE - 6.jpg',caption: ' Side Pose Highlighting a Ponytail Hair Style',                   alt: 'Side pose of Tamil Nadu vlogger Raj Vishnu Kumar, highlighting his ponytail as the best hair style for Men' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM - 2.jpg',caption: ' Viewing the Jungle Tribes Ornaments at the Gass Museum',                   alt: 'RVK Adventurer, a Coimbatore vlogger, exploring the Gass Forest Museum in Coimbatore near the showcase of Jungle Tribes Ornaments' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM - 4.jpg',caption: ' Enjoying a Historic Coimbatore Forest College Campus Visit',                   alt: 'Fashion stylish Coimbatore model Raj Vishnu Kumar visiting the historic Forest College Campus in Coimbatore, which was built in 1912' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM.jpg',caption: ' Rugged Look at the Coimbatore Gass Museum',                   alt: 'India vlogger Raj Vishnu Kumar presenting a rugged, fashion stylish look at the Gass Forest Museum in Coimbatore near the Jungle Tribes Ornaments showcase' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE COIMBATORE - 3.jpg',    caption: ' Presenting a Cute Smile and a Ponytail Hair Style',                   alt: 'India model Raj Vishnu Kumar showing off the best hair style for Men with a ponytail and a cute smile in this fashion stylish portrait' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR LONG HAIR STYLE COIMBATORE - 6.jpg',    caption: ' Side Pose Highlighting a Ponytail Hair Style',                   alt: 'Side pose of Tamil Nadu vlogger Raj Vishnu Kumar, highlighting his ponytail as the best hair style for Men' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM - 2.jpg',    caption: ' Viewing the Jungle Tribes Ornaments at the Gass Museum',                   alt: 'RVK Adventurer, a Coimbatore vlogger, exploring the Gass Forest Museum in Coimbatore near the showcase of Jungle Tribes Ornaments' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM - 4.jpg',    caption: ' Enjoying a Historic Coimbatore Forest College Campus Visit',                   alt: 'Fashion stylish Coimbatore model Raj Vishnu Kumar visiting the historic Forest College Campus in Coimbatore, which was built in 1912' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR GASS FOREST MUSEUM.jpg',    caption: ' Rugged Look at the Coimbatore Gass Museum',                   alt: 'India vlogger Raj Vishnu Kumar presenting a rugged, fashion stylish look at the Gass Forest Museum in Coimbatore near the Jungle Tribes Ornaments showcase' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER DAM.jpeg',caption: ' Posing at the Beautiful Malampuzha Dam in Kerala',                   alt: 'Tamil Nadu model RVK Adventurer posing at Malampuzha Dam in Kerala, featuring a short trim beard and the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER HAIRCUT.jpeg',caption: ' Enjoying the Scenic Backwaters of the Kerala Malampuzha Dam',                   alt: 'India model Raj Vishnu Kumar enjoying the scenic backwaters of Malampuzha Dam in Kerala, a fashion stylish travel portrait' },
+{ src: 'IMAGES/RVK ADVENTURER DAM.jpeg',    caption: ' Posing at the Beautiful Malampuzha Dam in Kerala',                   alt: 'Tamil Nadu model RVK Adventurer posing at Malampuzha Dam in Kerala, featuring a short trim beard and the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER HAIRCUT.jpeg',    caption: ' Enjoying the Scenic Backwaters of the Kerala Malampuzha Dam',                   alt: 'India model Raj Vishnu Kumar enjoying the scenic backwaters of Malampuzha Dam in Kerala, a fashion stylish travel portrait' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER DINDUGUL - 2.jpg',caption: ' Visiting the Martin Spinning Mills in Dindigul Tamilnadu',                   alt: 'India model Raj Vishnu Kumar visiting Martin Spinning Mills Private Ltd in Dindigul, Tamil Nadu, showcasing a casual fashion stylish look leaning against a red car' },
-{ src: 'IMAGES/RVK ADVENTURER DINDUGUL.jpg',caption: ' Standing Near the Thalappakatti Restaurant in Dindigul Bazaar',                   alt: 'Coimbatore vlogger RVK Adventurer posing on a tractor near Dindigul Thalappakatti Restaurant in Dindigul Bazaar' },
+{ src: 'IMAGES/RVK ADVENTURER DINDUGUL - 2.jpg',    caption: ' Visiting the Martin Spinning Mills in Dindigul Tamilnadu',                   alt: 'India model Raj Vishnu Kumar visiting Martin Spinning Mills Private Ltd in Dindigul, Tamil Nadu, showcasing a casual fashion stylish look leaning against a red car' },
+{ src: 'IMAGES/RVK ADVENTURER DINDUGUL.jpg',    caption: ' Thalappakatti Restaurant Tractor in Dindigul Bazaar',                   alt: 'Coimbatore vlogger RVK Adventurer posing on a tractor near Dindigul Thalappakatti Restaurant in Dindigul Bazaar' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER DIWALI CELEB.jpg',caption: ' Relaxing at Boomerang Ice Cream on Avinashi Road',                   alt: 'Tamil Nadu model Raj Vishnu Kumar relaxing on the stairs at Boomerang Ice Cream shop on Avinashi Road in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER BOOMERANG COIMBATORE.jpeg',caption: ' Trekking Through the Dense Forest of Siruvani Hills',                   alt: 'RVK Adventurer, an India vlogger, adjusting his sleeves while trekking through the dense forest of Siruvani Hills' },
-{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 1.jpg',caption: ' Resting by a Huge Tree in the Siruvani Hills Forest',                   alt: 'Coimbatore model Raj Vishnu Kumar sitting at the base of a huge tree deep in the dense forest of Siruvani Hills' },
-{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 7.jpg',caption: ' Walking on a Scenic Hill Road in the Nilgiris',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing on a scenic hill road in the Nilgiris, showcasing a fashion stylish travel outfit in a green printed shirt' },
-{ src: 'IMAGES/RVK ADVENTURER OOTY DRIVE.jpg',caption: ' Enjoying a Scenic Travel Drive Through Beautiful Ooty',                   alt: '' },
+{ src: 'IMAGES/RVK ADVENTURER DIWALI CELEB.jpg',    caption: 'Casual Rugged Style Portrait from Home ',                   alt: 'Tamil Nadu model Raj Vishnu Kumar relaxing on the stairs at Boomerang Ice Cream shop on Avinashi Road in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER BOOMERANG COIMBATORE.jpeg',    caption: 'Relaxing at Boomerang Ice Cream on Avinashi Road ',                   alt: 'RVK Adventurer, an India vlogger, adjusting his sleeves while trekking through the dense forest of Siruvani Hills' },
+{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 1.jpg',    caption: 'Trekking Through the Dense Forest of Siruvani Hills ',                   alt: 'Coimbatore model Raj Vishnu Kumar sitting at the base of a huge tree deep in the dense forest of Siruvani Hills' },
+{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 7.jpg',    caption: ' Resting by a Huge Tree in the Siruvani Hills Forest',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing on a scenic hill road in the Nilgiris, showcasing a fashion stylish travel outfit in a green printed shirt' },
+{ src: 'IMAGES/RVK ADVENTURER OOTY DRIVE.jpg',    caption: ' Enjoying a Scenic Travel Drive Through Beautiful Ooty',                   alt: 'RVK Adventurer from Coimbatore, India Enjoying a Scenic Beauty of Ooty in Green Stylish Shirt' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER LOVE.jpeg',caption: ' Wearing a Red Shirt at the Sree Annapoorna Hall',                   alt: 'Raj Vishnu Kumar, a Coimbatore model, wearing a fashion stylish red shirt at Sree Annapoorna hall on Avinashi Road in Coimbatore' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS.jpeg',caption: ' Posing at CAP Digisoft Solutions in Coimbatore',                   alt: 'India vlogger RVK Adventurer wearing sunglasses and a red shirt, posing with arms crossed at CAP Digisoft Solutions Pvt Ltd in Coimbatore' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 2.jpeg',caption: ' Standing at the Flobile Department at CAP Digisoft Solutions',                   alt: 'Side profile of Tamil Nadu model Raj Vishnu Kumar looking back at the Flobile Department of CAP Digisoft Solutions Pvt Ltd in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER MODEL - 1.jpeg',caption: ' Presenting a Casual Red Cap and Hoodie Style',                   alt: 'India model Raj Vishnu Kumar adjusting his red cap in a hoodie during a casual fashion stylish modeling photoshoot' },
-{ src: 'IMAGES/RVK ADVENTURER MODEL - 2.jpeg',caption: ' Stylish Red Cap and Hoodie Portrait',                   alt: 'Coimbatore vlogger RVK Adventurer wearing a red cap and hoodie for a casual fashion stylish modeling photoshoot' },
-{ src: 'IMAGES/RVK ADVENTURER RED BLAZER.jpeg',caption: ' Stylish Red Blazer on a Yellow Background',                   alt: 'Tamil Nadu model Raj Vishnu Kumar showcasing a fashion stylish red blazer against a yellow background during a studio modeling photoshoot' },
-{ src: 'IMAGES/RVK ADVENTURER RED LONG HAIR - 1.jpeg',caption: ' Showcasing a Red and Black Striped Polo Style',                   alt: 'Raj Vishnu Kumar highlighting the best hair style for Men during a modeling photoshoot, wearing a red and black striped polo shirt' },
-{ src: 'IMAGES/RVK ADVENTURER RED LONG HAIR - 2.jpeg',caption: ' Thoughtful Profile in a Striped Polo Shirt',                   alt: 'Side profile of Coimbatore model Raj Vishnu Kumar looking thoughtfully away in a fashion stylish striped polo shirt, showcasing best rugged fashion beard style' },
-{ src: 'IMAGES/RVK ADVENTURER RED LONG HAIR - 3.jpeg',caption: ' Wearing a Stylish Red and Black Striped Shirt',                   alt: 'India vlogger RVK Adventurer looking directly at the camera, showcasing the best hair style for Men in a red and black striped shirt' },
-{ src: 'IMAGES/RVK ADVENTURER RED.jpeg',caption: ' Bright Red Shirt and Sunglasses Look',                   alt: 'Tamil Nadu model Raj Vishnu Kumar standing outdoors by a bush in a bright red shirt and sunglasses, presenting a casual fashion stylish look' },
-{ src: 'IMAGES/RVK ADVENTURER PRO ZONE COIMBATORE.jpg',caption: ' Standing Casually at Prozone Mall in Coimbatore',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar standing casually between large planters at Prozone Mall in Coimbatore' },
-{ src: 'IMAGES/RVK OOTY.jpg',caption: ' Relaxing on a Bench at the Ooty Boat House',                   alt: 'India model RVK Adventurer relaxing on a bench at the Ooty Boat House, wearing sunglasses and a fashion stylish red overshirt' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR KOVAI KUTTRALAM BRIDGE.jpg',caption: ' Wearing a Pink Shirt Near the Siruvani Village Bridge',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar standing near the Siruvani village bridge in a bright pink shirt, capturing his outdoor travel lifestyle' },
-{ src: 'IMAGES/RVK ADVENTURER MYSORE.jpeg',caption: ' Posing by a Stylish Open Car Door in Mysore',                   alt: 'RVK Adventurer, a fashion stylish Coimbatore model, posing next to an open car door during a trip to Mysore' },
+{ src: 'IMAGES/RVK ADVENTURER LOVE.jpeg',    caption: ' Wearing a Red Shirt at the Sree Annapoorna Hall',                   alt: 'Raj Vishnu Kumar, a Coimbatore model, wearing a fashion stylish red shirt at Sree Annapoorna hall on Avinashi Road in Coimbatore' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS.jpeg',    caption: ' Posing at CAP Digisoft Solutions in Coimbatore',                   alt: 'India vlogger RVK Adventurer wearing sunglasses and a red shirt, posing with arms crossed at CAP Digisoft Solutions Pvt Ltd in Coimbatore' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR CAP DIGISOFT SOLUTIONS - 2.jpeg',    caption: ' Standing at the Flobile Department at CAP Digisoft Solutions',                   alt: 'Side profile of Tamil Nadu model Raj Vishnu Kumar looking back at the Flobile Department of CAP Digisoft Solutions Pvt Ltd in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER MODEL - 1.jpeg',    caption: ' Presenting a Casual Red Cap and Hoodie Style',                   alt: 'India model Raj Vishnu Kumar adjusting his red cap in a hoodie during a casual fashion stylish modeling photoshoot' },
+{ src: 'IMAGES/RVK ADVENTURER MODEL - 2.jpeg',    caption: ' Stylish Red Cap and Hoodie Portrait',                   alt: 'Coimbatore vlogger RVK Adventurer wearing a red cap and hoodie for a casual fashion stylish modeling photoshoot' },
+{ src: 'IMAGES/RVK ADVENTURER RED BLAZER.jpeg',    caption: ' Stylish Red Blazer on a Yellow Background',                   alt: 'Tamil Nadu model Raj Vishnu Kumar showcasing a fashion stylish red blazer against a yellow background during a studio modeling photoshoot' },
+{ src: 'IMAGES/RVK ADVENTURER RED LONG HAIR - 1.jpeg',    caption: ' Showcasing a Red and Black Striped Polo Style',                   alt: 'Raj Vishnu Kumar highlighting the best hair style for Men during a modeling photoshoot, wearing a red and black striped polo shirt' },
+{ src: 'IMAGES/RVK ADVENTURER RED LONG HAIR - 2.jpeg',    caption: ' Thoughtful Profile in a Striped Polo Shirt',                   alt: 'Side profile of Coimbatore model Raj Vishnu Kumar looking thoughtfully away in a fashion stylish striped polo shirt, showcasing best rugged fashion beard style' },
+{ src: 'IMAGES/RVK ADVENTURER RED LONG HAIR - 3.jpeg',    caption: ' Wearing a Stylish Red and Black Striped Shirt',                   alt: 'India vlogger RVK Adventurer looking directly at the camera, showcasing the best hair style for Men in a red and black striped shirt' },
+{ src: 'IMAGES/RVK ADVENTURER RED.jpeg',    caption: ' Bright Red Shirt and Sunglasses Look',                   alt: 'Tamil Nadu model Raj Vishnu Kumar standing outdoors by a bush in a bright red shirt and sunglasses, presenting a casual fashion stylish look' },
+{ src: 'IMAGES/RVK ADVENTURER PRO ZONE COIMBATORE.jpg',    caption: ' Standing Casually at Prozone Mall in Coimbatore',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar standing casually between large planters at Prozone Mall in Coimbatore' },
+{ src: 'IMAGES/RVK OOTY.jpg',    caption: ' Relaxing on a Bench at the Ooty Boat House',                   alt: 'India model RVK Adventurer relaxing on a bench at the Ooty Boat House, wearing sunglasses and a fashion stylish red overshirt' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR KOVAI KUTTRALAM BRIDGE.jpg',    caption: ' Near the Siruvani Village Bridge',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar standing near the Siruvani village bridge in a bright pink shirt, capturing his outdoor travel lifestyle' },
+{ src: 'IMAGES/RVK ADVENTURER MYSORE.jpeg',    caption: ' Posing by a Stylish Open Car Door in Mysore',                   alt: 'RVK Adventurer, a fashion stylish Coimbatore model, posing next to an open car door during a trip to Mysore' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER CLOSEUP.jpg',caption: ' Relaxing at Boomerang Ice Cream in Coimbatore',                   alt: 'India vlogger Raj Vishnu Kumar wearing sunglasses and a yellow shirt, relaxing at Boomerang ice cream shop in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER NILGRIS.jpeg',caption: ' Viewing the Scenic Kundah in the Tamil Nadu Nilgiris',                   alt: 'Coimbatore model RVK Adventurer looking out over the scenic hilly region of Kundah in the Nilgiris district of Tamil Nadu' },
+{ src: 'IMAGES/RVK ADVENTURER CLOSEUP.jpg',    caption: ' Relaxing at Boomerang Ice Cream in Coimbatore',                   alt: 'India vlogger Raj Vishnu Kumar wearing sunglasses and a yellow shirt, relaxing at Boomerang ice cream shop in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER NILGRIS.jpeg',    caption: ' The Scenic Kundah in the Nilgiris, Tamil Nadu ',                   alt: 'Coimbatore model RVK Adventurer looking out over the scenic hilly region of Kundah in the Nilgiris district of Tamil Nadu' },
 
 
-{ src: 'IMAGES/RVK GANDHIMANAGAR.jpg',caption: ' Showcasing a Stylish Hair Look at Gandhi Managar',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar showcasing the best hair style for Men and a fashion stylish look at Gandhi Managar in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER DHANUSHKODI.jpg',caption: ' Sitting on the Rocks at Arichal Munai Beach in Dhanushkodi',                   alt: 'India model Raj Vishnu Kumar sitting on rocks at the beautiful Arichal Munai Beach in Dhanushkodi, wearing a casual blue shirt' },
-{ src: 'IMAGES/RVK ADVENTURER RAMESHWARAM.jpg',caption: ' Enjoying the Ocean View at Arichal Munai Beach',                   alt: 'Side profile of Coimbatore vlogger RVK Adventurer enjoying the ocean view at Arichal Munai Beach located in Dhanushkodi' },
-{ src: 'IMAGES/RVK ADVENTURER HOODY.jpeg',caption: ' Stylish Dark Hoodie Side Profile Portrait',                   alt: 'Fashion stylish portrait of RVK Adventurer, a Tamil Nadu model, looking to the side while wearing a dark hoodie' },
-{ src: 'IMAGES/RVK ADVENTURER OOTY - 2.jpg',caption: ' Standing by the Water Railing at the Ooty Boat House',                   alt: 'India vlogger Raj Vishnu Kumar standing casually near the water railing at the scenic Ooty boat house' },
-{ src: 'IMAGES/RVK ADVENTURER OOTY BOAT HOUSE.jpg',caption: ' Wearing a Blue Shirt at the Ooty Boat House',                   alt: 'India vlogger Raj Vishnu Kumar sitting on a railing at the scenic Ooty Boat House, wearing a fashion stylish blue shirt and sunglasses' },
-{ src: 'IMAGES/RVK ADVENTURER OOTY.jpeg',caption: ' Standing by a Plant Wall at the Ooty Boat House',                   alt: 'Coimbatore model RVK Adventurer relaxing near a plant wall at the Ooty Boat House, showcasing a fashion stylish look in a blue button-up shirt' },
-{ src: 'IMAGES/RVK ADVENTURER OOTY.jpg',caption: ' Viewing the Colorful Flowers at the Ooty Botanical Garden',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar exploring the colorful flowers at the Ooty Botanical Garden, highlighting the best hair style for Men' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR VTG ZENFRA - 2.jpeg',caption: ' Working at the Zenfra Software Dept at Virtual Tech',                   alt: 'Side profile of India model Raj Vishnu Kumar working at his desk in the ZENfra Software Production Dept of Virtual Tech Gurus Pvt Ltd in Coimbatore' },
-{ src: 'IMAGES/RAJ VISHNU KUMAR VTG ZENFRA.jpeg',caption: ' Sitting at a Workstation in the Zenfra Software Production Dept',                   alt: 'Coimbatore vlogger RVK Adventurer sitting professionally at his workstation in the ZENfra Software Production Dept at Virtual Tech Gurus Pvt Ltd in Coimbatore' },
-{ src: 'IMAGES/Raj Vishnu Kumar at ZENfra Virtual Tech Gurus.jpeg',caption: ' Working at a Desk in the Zenfra Software Production Dept',                   alt: 'Tamil Nadu model Raj Vishnu Kumar looking directly at the camera from his desk at the ZENfra Software Production Dept inside Virtual Tech Gurus Pvt Ltd, Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER VADANAPALLY BEACH - 2.jpeg',caption: ' Wearing a Denim Outfit on the Kerala Vadanappally Beach',                   alt: 'Fashion stylish India vlogger Raj Vishnu Kumar standing on the sands of Vadanappally Beach in Thrissur, Kerala, wearing a classic blue denim outfit' },
-{ src: 'IMAGES/RVK ADVENTURER SIRUVANI.jpg',caption: ' Wearing Blue Denim at the Siruvani River Bridge',                   alt: 'India vlogger Raj Vishnu Kumar standing near the Siruvani River bridge, wearing a fashion stylish blue denim shirt' },
+{ src: 'IMAGES/RVK GANDHIMANAGAR.jpg',    caption: ' Showcasing a Stylish Hair Look at Gandhi Managar',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar showcasing the best hair style for Men and a fashion stylish look at Gandhi Managar in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER DHANUSHKODI.jpg',    caption: ' Sitting on the Rocks at Arichal Munai Beach in Dhanushkodi',                   alt: 'India model Raj Vishnu Kumar sitting on rocks at the beautiful Arichal Munai Beach in Dhanushkodi, wearing a casual blue shirt' },
+{ src: 'IMAGES/RVK ADVENTURER RAMESHWARAM.jpg',    caption: ' Enjoying the Ocean View at Arichal Munai Beach',                   alt: 'Side profile of Coimbatore vlogger RVK Adventurer enjoying the ocean view at Arichal Munai Beach located in Dhanushkodi' },
+{ src: 'IMAGES/RVK ADVENTURER HOODY.jpeg',    caption: ' Stylish Dark Hoodie Side Profile Portrait',                   alt: 'Fashion stylish portrait of RVK Adventurer, a Tamil Nadu model, looking to the side while wearing a dark hoodie' },
+{ src: 'IMAGES/RVK ADVENTURER OOTY - 2.jpg',    caption: ' Standing by the Water Railing at the Ooty Boat House',                   alt: 'India vlogger Raj Vishnu Kumar standing casually near the water railing at the scenic Ooty boat house' },
+{ src: 'IMAGES/RVK ADVENTURER OOTY BOAT HOUSE.jpg',    caption: ' The Ooty Boat House',                   alt: 'India vlogger Raj Vishnu Kumar sitting on a railing at the scenic Ooty Boat House, wearing a fashion stylish blue shirt and sunglasses' },
+{ src: 'IMAGES/RVK ADVENTURER OOTY.jpeg',    caption: ' Plant Wall at the Ooty Boat House',                   alt: 'Coimbatore model RVK Adventurer relaxing near a plant wall at the Ooty Boat House, showcasing a fashion stylish look in a blue button-up shirt' },
+{ src: 'IMAGES/RVK ADVENTURER OOTY.jpg',    caption: ' Colorful Flowers at the Ooty Botanical Garden',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar exploring the colorful flowers at the Ooty Botanical Garden, highlighting the best hair style for Men' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR VTG ZENFRA - 2.jpeg',    caption: ' The ZENfra Software Dept at Virtual Tech Gurus',                   alt: 'Side profile of India model Raj Vishnu Kumar working at his desk in the ZENfra Software Production Dept of Virtual Tech Gurus Pvt Ltd in Coimbatore' },
+{ src: 'IMAGES/RAJ VISHNU KUMAR VTG ZENFRA.jpeg',    caption: ' Sitting at a Workstation in the ZENfra Software Production Dept',                   alt: 'Coimbatore vlogger RVK Adventurer sitting professionally at his workstation in the ZENfra Software Production Dept at Virtual Tech Gurus Pvt Ltd in Coimbatore' },
+{ src: 'IMAGES/Raj Vishnu Kumar at ZENfra Virtual Tech Gurus.jpeg',    caption: ' Working at a Desk in the ZENfra Software Production Dept',                   alt: 'Tamil Nadu model Raj Vishnu Kumar looking directly at the camera from his desk at the ZENfra Software Production Dept inside Virtual Tech Gurus Pvt Ltd, Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER VADANAPALLY BEACH - 2.jpeg',    caption: ' The Kerala Vadanappally Beach',                   alt: 'Fashion stylish India vlogger Raj Vishnu Kumar standing on the sands of Vadanappally Beach in Thrissur, Kerala, wearing a classic blue denim outfit' },
+{ src: 'IMAGES/RVK ADVENTURER SIRUVANI.jpg',    caption: ' The Siruvani River Bridge',                   alt: 'India vlogger Raj Vishnu Kumar standing near the Siruvani River bridge, wearing a fashion stylish blue denim shirt' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER PERUR - 1.jpg',caption: ' Perur Kovil Back Water in Coimbatore',                   alt: 'Tamil Nadu model RVK Adventurer looking over his shoulder while visiting the scenic Perur Kovil back water in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER PERUR - 2.jpg',caption: ' Wearing a Patterned Shirt at the Perur Kovil Backwater',                   alt: 'India model Raj Vishnu Kumar wearing sunglasses and a patterned shirt at Perur Kovils back water in Coimbatore, showcasing a fashion stylish look' },
-{ src: 'IMAGES/RVK ADVENTURER PERUR - 3.jpg',caption: ' Showcasing Stylish Hair at the Perur Kovil Backwater',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar posing with hands behind his head at the beautiful Perur Kovil back water in Coimbatore, highlighting the best hair style for Men' },
-{ src: 'IMAGES/RVK PERUR.jpeg',caption: ' Striking a Confident Pose at the Perur Kovil Backwater',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing confidently near the Perur Kovil back water in Coimbatore in a casual patterned shirt' },
-{ src: 'IMAGES/RVK ADVENTURER TIDEL PARK.jpeg',caption: ' Relaxing Couch Portrait at Tidel Park in Coimbatore',                   alt: 'Raj Vishnu Kumar, a Coimbatore model, sitting on a couch at Tidel Park Coimbatore wearing a fashion stylish patterned shirt' },
-{ src: 'IMAGES/RVK ADVENTURER TRADITIONAL.jpeg',caption: ' Wearing a Traditional Tamil Culture Pongal Celebration Outfit',                   alt: 'India vlogger RVK Adventurer dressed in a traditional outfit of Tamil culture for a Pongal celebration, presenting a fashion stylish ethnic look' },
+{ src: 'IMAGES/RVK ADVENTURER PERUR - 1.jpg',    caption: ' Perur Kovil Back Water in Coimbatore',                   alt: 'Tamil Nadu model RVK Adventurer looking over his shoulder while visiting the scenic Perur Kovil back water in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER PERUR - 2.jpg',    caption: ' Wearing a Patterned Shirt at the Perur Kovil Backwater',                   alt: 'India model Raj Vishnu Kumar wearing sunglasses and a patterned shirt at Perur Kovils back water in Coimbatore, showcasing a fashion stylish look' },
+{ src: 'IMAGES/RVK ADVENTURER PERUR - 3.jpg',    caption: ' Stylish Pose at the Perur Temple Backwater',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar posing with hands behind his head at the beautiful Perur Kovil back water in Coimbatore, highlighting the best hair style for Men' },
+{ src: 'IMAGES/RVK PERUR.jpeg',    caption: ' Striking a Confident Pose at the Perur Kovil Backwater',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing confidently near the Perur Kovil back water in Coimbatore in a casual patterned shirt' },
+{ src: 'IMAGES/RVK ADVENTURER TIDEL PARK.jpeg',    caption: ' Relaxing Couch Portrait at Tidel Park in Coimbatore',                   alt: 'Raj Vishnu Kumar, a Coimbatore model, sitting on a couch at Tidel Park Coimbatore wearing a fashion stylish patterned shirt' },
+{ src: 'IMAGES/RVK ADVENTURER TRADITIONAL.jpeg',    caption: ' Traditional Tamil Culture Pongal Celebration Outfit',                   alt: 'India vlogger RVK Adventurer dressed in a traditional outfit of Tamil culture for a Pongal celebration, presenting a fashion stylish ethnic look' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER PINK - 1.jpeg',caption: ' Engaging in a Smart Photoshoot in a Stylish Pink Shirt',                   alt: 'India model Raj Vishnu Kumar wearing glasses during a cute and smart photoshoot, showcasing a fashion stylish pink shirt' },
-{ src: 'IMAGES/RVK ADVENTURER PINK - 2.jpeg',caption: ' Presenting a Cute and Smart Photoshoot Portrait Style',                   alt: 'Coimbatore vlogger RVK Adventurer looking directly at the camera for a cute and smart photoshoot' },
-{ src: 'IMAGES/RVK ADVENTURER PINK - 6.jpeg',caption: ' Stylish Hands in Pockets Photoshoot Pose',                   alt: 'Tamil Nadu model Raj Vishnu Kumar posing with hands in pockets during a cute and smart photoshoot, presenting a fashion stylish look' },
-{ src: 'IMAGES/RVK ADVENTURER PURPLE - 1.jpeg',caption: ' Presenting a Traditional Tamil Culture White Dhoti Style',                   alt: 'Side profile of India vlogger Raj Vishnu Kumar in a traditional photoshoot of Tamil culture, wearing a purple shirt and white dhoti' },
-{ src: 'IMAGES/RVK ADVENTURER PURPLE - 2.jpeg',caption: ' Confident Traditional Tamil Culture Photoshoot Style',                   alt: 'Coimbatore model RVK Adventurer standing confidently during a traditional photoshoot of Tamil culture' },
-{ src: 'IMAGES/RVK ADVENTURER PURPLE - 3.jpeg',caption: ' Wearing Stylish Sunglasses in a Traditional Tamil Photoshoot',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar highlighting the best hair style for Men and sunglasses in a traditional photoshoot of Tamil culture' },
-{ src: 'IMAGES/RVK ADVENTURER PURPLE - 4.jpeg',caption: ' Wearing a Purple Shirt in Traditional Tamil Attire',                   alt: 'RVK Adventurer, a fashion stylish India model, wearing traditional Tamil culture attire with a purple shirt and sunglasses' },
+{ src: 'IMAGES/RVK ADVENTURER PINK - 1.jpeg',    caption: ' Smart Photoshoot in a Stylish Pink Shirt',                   alt: 'India model Raj Vishnu Kumar wearing glasses during a cute and smart photoshoot, showcasing a fashion stylish pink shirt' },
+{ src: 'IMAGES/RVK ADVENTURER PINK - 2.jpeg',    caption: ' a Cute and Smart Photoshoot Portrait Style',                   alt: 'Coimbatore vlogger RVK Adventurer looking directly at the camera for a cute and smart photoshoot' },
+{ src: 'IMAGES/RVK ADVENTURER PINK - 6.jpeg',    caption: ' Stylish Hands in Pockets Photoshoot Pose',                   alt: 'Tamil Nadu model Raj Vishnu Kumar posing with hands in pockets during a cute and smart photoshoot, presenting a fashion stylish look' },
+{ src: 'IMAGES/RVK ADVENTURER PURPLE - 1.jpeg',    caption: ' Traditional Tamil Culture White Dhoti Style',                   alt: 'Side profile of India vlogger Raj Vishnu Kumar in a traditional photoshoot of Tamil culture, wearing a purple shirt and white dhoti' },
+{ src: 'IMAGES/RVK ADVENTURER PURPLE - 2.jpeg',    caption: ' Confident Traditional Tamil Culture Photoshoot Style',                   alt: 'Coimbatore model RVK Adventurer standing confidently during a traditional photoshoot of Tamil culture' },
+{ src: 'IMAGES/RVK ADVENTURER PURPLE - 3.jpeg',    caption: ' Wearing Stylish Sunglasses in a Traditional Tamil Photoshoot',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar highlighting the best hair style for Men and sunglasses in a traditional photoshoot of Tamil culture' },
+{ src: 'IMAGES/RVK ADVENTURER PURPLE - 4.jpeg',    caption: ' Traditional Tamil Attire',                   alt: 'RVK Adventurer, a fashion stylish India model, wearing traditional Tamil culture attire with a purple shirt and sunglasses' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER POLLACHI.jpeg',caption: ' Wearing a White Shirt Near Arjun College in Pollachi',                   alt: 'India vlogger Raj Vishnu Kumar smiling with arms crossed in a white shirt near Arjun College of Technology on Pollachi Road' },
-{ src: 'IMAGES/RVK ADVENTURER PHOTOGRAPHER.jpeg',caption: ' Wearing a Black Cap at Hindustan College in Coimbatore',                   alt: 'Coimbatore model RVK Adventurer wearing a black cap and white shirt, presenting a casual fashion stylish look at Hindustan College of Arts and Science' },
-{ src: 'IMAGES/RVK ADVENTURER RUGGED LONG HAIR.jpeg',caption: ' Wearing a White Shirt at Kava Island in Kerala',                   alt: 'Tamil Nadu model Raj Vishnu Kumar looking over his shoulder at Kava Island, Kerala, showcasing a fashion stylish white shirt and the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER RUGGED.jpeg',caption: ' Enjoying the Breeze at Kava Island in Kerala',                   alt: 'Side profile of India model RVK Adventurer enjoying the breeze at Kava Island in Kerala, highlighting his fashion stylish look and the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER SLEEVELESS WHITE.jpeg',caption: ' Wearing a White Sleeveless Shirt at Hopes College in Coimbatore',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar standing confidently in a white sleeveless shirt at Hopes College, Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER WHITE - 1.jpeg',caption: ' Standing on a Bridge at the Hindustan College of Arts',                   alt: 'Tamil Nadu vlogger RVK Adventurer relaxing on the tiny bridge at Hindustan College of Arts and Science, wearing a fashion stylish casual outfit' },
-{ src: 'IMAGES/RVK ADVENTURER WHITE - 2.jpeg',caption: ' Posing by the Yellow Railing at Hindustan College in Coimbatore',                   alt: 'India model Raj Vishnu Kumar posing near a yellow railing at Hindustan College of Arts and Science in Coimbatore, wearing glasses and a fashion stylish white shirt' },
-{ src: 'IMAGES/RVK ADVENTURER WHITE - 3.jpeg',caption: ' Wearing an Open White Shirt at Hopes College',                   alt: 'India model Raj Vishnu Kumar wearing a fashion stylish open white shirt and sunglasses at Hopes College in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER WHITE - 4.jpeg',caption: ' Sunglasses Portrait Taken at Hopes College in Coimbatore',                   alt: 'Coimbatore vlogger RVK Adventurer looking away while posing in a white shirt and sunglasses at Hopes College, Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER WHITE LONG HAIR.jpeg',caption: ' Working at CDS Pvt Ltd Medical Legal Spider',                   alt: 'Tamil Nadu model Raj Vishnu Kumar showcasing a fashion stylish look and the best hair style for Men at the Medical Legal Spider Department of CDS Pvt Ltd in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER WHITE.jpeg',caption: ' Wearing a Red Cap Exploring the Kottathara Hills in India',                   alt: 'RVK Adventurer, an India vlogger, wearing a red cap and white polo shirt while exploring Kottathara Hills in India' },
-{ src: 'IMAGES/RVK VOC PARK COVAI.jpg',caption: ' Sitting Casually at VOC Park in Coimbatore',                   alt: 'Coimbatore model Raj Vishnu Kumar sitting casually on the steps at VOC Park in Coimbatore, presenting a fashion stylish outfit' },
+{ src: 'IMAGES/RVK ADVENTURER POLLACHI.jpeg',    caption: ' Near Arjun College in Pollachi',                   alt: 'India vlogger Raj Vishnu Kumar smiling with arms crossed in a white shirt near Arjun College of Technology on Pollachi Road' },
+{ src: 'IMAGES/RVK ADVENTURER PHOTOGRAPHER.jpeg',    caption: ' Hindustan College in Coimbatore',                   alt: 'Coimbatore model RVK Adventurer wearing a black cap and white shirt, presenting a casual fashion stylish look at Hindustan College of Arts and Science' },
+{ src: 'IMAGES/RVK ADVENTURER RUGGED LONG HAIR.jpeg',    caption: ' Kava Island in Kerala',                   alt: 'Tamil Nadu model Raj Vishnu Kumar looking over his shoulder at Kava Island, Kerala, showcasing a fashion stylish white shirt and the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER RUGGED.jpeg',    caption: ' Enjoying the Breeze at Kava Island in Kerala',                   alt: 'Side profile of India model RVK Adventurer enjoying the breeze at Kava Island in Kerala, highlighting his fashion stylish look and the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER SLEEVELESS WHITE.jpeg',    caption: ' Wearing a White Sleeveless Shirt at Hopes College in Coimbatore',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar standing confidently in a white sleeveless shirt at Hopes College, Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER WHITE - 1.jpeg',    caption: ' Standing on a Bridge at the Hindustan College of Arts and Science',                   alt: 'Tamil Nadu vlogger RVK Adventurer relaxing on the tiny bridge at Hindustan College of Arts and Science, wearing a fashion stylish casual outfit' },
+{ src: 'IMAGES/RVK ADVENTURER WHITE - 2.jpeg',    caption: ' Posing by the Yellow Railing at Hindustan College of Arts and Science in Coimbatore',                   alt: 'India model Raj Vishnu Kumar posing near a yellow railing at Hindustan College of Arts and Science in Coimbatore, wearing glasses and a fashion stylish white shirt' },
+{ src: 'IMAGES/RVK ADVENTURER WHITE - 3.jpeg',    caption: ' Wearing an Open White Shirt at Hopes College',                   alt: 'India model Raj Vishnu Kumar wearing a fashion stylish open white shirt and sunglasses at Hopes College in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER WHITE - 4.jpeg',    caption: ' Sunglasses Portrait Taken at Hopes College in Coimbatore',                   alt: 'Coimbatore vlogger RVK Adventurer looking away while posing in a white shirt and sunglasses at Hopes College, Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER WHITE LONG HAIR.jpeg',    caption: ' Medical Legal Spider Department of CAP Digisoft Solutions Pvt Ltd ',                   alt: 'Tamil Nadu model Raj Vishnu Kumar showcasing a fashion stylish look and the best hair style for Men at the Medical Legal Spider Department of CDS Pvt Ltd in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER WHITE.jpeg',    caption: ' Exploring the Kottathara Hills in India',                   alt: 'RVK Adventurer, an India vlogger, wearing a red cap and white polo shirt while exploring Kottathara Hills in India' },
+{ src: 'IMAGES/RVK VOC PARK COVAI.jpg',    caption: ' Sitting Casually at VOC Park in Coimbatore',                   alt: 'Coimbatore model Raj Vishnu Kumar sitting casually on the steps at VOC Park in Coimbatore, presenting a fashion stylish outfit' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER SHOUT.jpeg',caption: ' Intense Black and White Portrait Flexing',                   alt: 'Black and white portrait of Tamil Nadu model RVK Adventurer flexing his arm, showcasing an intense and fashion stylish look' },
-{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 1.jpg',caption: ' Presenting a Vintage Black and White Portrait Style',                   alt: 'India vlogger Raj Vishnu Kumar standing with hands in his pockets for a fashion stylish black and white portrait, highlighting the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 2.jpg',caption: ' Black and White Glasses Portrait Style',                   alt: 'Black and white portrait of Coimbatore model Raj Vishnu Kumar standing with hands in pockets, wearing a light shirt and glasses' },
-{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 3.jpg',caption: ' Confident Black and White Photoshoot Style',                   alt: 'India vlogger RVK Adventurer posing confidently in a light button-down shirt for a fashion stylish black and white photoshoot' },
-{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 4.jpg',caption: ' Thoughtful Black and White Studio Shoot',                   alt: 'Tamil Nadu model Raj Vishnu Kumar looking thoughtfully to the side in a crisp outfit during a black and white studio shoot' },
-{ src: 'IMAGES/RVK ADVENTURER BLACK AND WHITE.jpeg',caption: ' Patterned Shirt Black and White Portrait',                   alt: 'Fashion stylish India model Raj Vishnu Kumar adjusting his sunglasses while wearing a patterned shirt in a black and white portrait' },
-{ src: 'IMAGES/RVK ADVENTURER TERROR.jpeg',caption: ' Close Up Black and White Portrait',                   alt: 'Close-up black and white portrait of Coimbatore vlogger RVK Adventurer, showcasing a long fringe and the best hair style for Men' },
-{ src: 'IMAGES/RVK BW.jpeg',caption: ' Sharp Fade Shaved Designs Side Profile',                   alt: 'Side profile of Tamil Nadu model Raj Vishnu Kumar highlighting a sharp fade with shaved designs, showcasing the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER HAIRSTYLE - 2.jpeg',caption: ' Stylish Hair Bun in Black and White',                   alt: 'India vlogger RVK Adventurer looking over his shoulder, featuring a stylish hair bun and a fashion stylish hoodie in a black and white shot' },
-{ src: 'IMAGES/RVK ADVENTURER HAIRSTYLE.jpg',caption: ' Stylish Pony Tail in Black and White',                   alt: 'Side profile portrait of Coimbatore model Raj Vishnu Kumar in a black and white shot, showcasing a stylish pony tail hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER SHOUT.jpeg',    caption: ' Intense Black and White Portrait',                   alt: 'Black and white portrait of Tamil Nadu model RVK Adventurer flexing his arm, showcasing an intense and fashion stylish look' },
+{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 1.jpg',    caption: ' Presenting a Vintage Black and White Portrait Style',                   alt: 'India vlogger Raj Vishnu Kumar standing with hands in his pockets for a fashion stylish black and white portrait, highlighting the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 2.jpg',    caption: ' Black and White Glasses Portrait Style',                   alt: 'Black and white portrait of Coimbatore model Raj Vishnu Kumar standing with hands in pockets, wearing a light shirt and glasses' },
+{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 3.jpg',    caption: ' Confident Black and White Photoshoot Style',                   alt: 'India vlogger RVK Adventurer posing confidently in a light button-down shirt for a fashion stylish black and white photoshoot' },
+{ src: 'IMAGES/RVK ADVENTURER VINTAGE - 4.jpg',    caption: ' Thoughtful Black and White Studio Shoot',                   alt: 'Tamil Nadu model Raj Vishnu Kumar looking thoughtfully to the side in a crisp outfit during a black and white studio shoot' },
+{ src: 'IMAGES/RVK ADVENTURER BLACK AND WHITE.jpeg',    caption: ' Denim Shirt Black and White Portrait',                   alt: 'Fashion stylish India model Raj Vishnu Kumar adjusting his sunglasses while wearing a patterned shirt in a black and white portrait' },
+{ src: 'IMAGES/RVK ADVENTURER TERROR.jpeg',    caption: ' Staring Look Close Up Black and White Portrait',                   alt: 'Close-up black and white portrait of Coimbatore vlogger RVK Adventurer, showcasing a long fringe and the best hair style for Men' },
+{ src: 'IMAGES/RVK BW.jpeg',    caption: ' Rugged Hair Style Side Profile',                   alt: 'Side profile of Tamil Nadu model Raj Vishnu Kumar highlighting a sharp fade with shaved designs, showcasing the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER HAIRSTYLE - 2.jpeg',    caption: ' Stylish Hair Bun in Black and White',                   alt: 'India vlogger RVK Adventurer looking over his shoulder, featuring a stylish hair bun and a fashion stylish hoodie in a black and white shot' },
+{ src: 'IMAGES/RVK ADVENTURER HAIRSTYLE.jpg',    caption: ' Stylish Pony Tail in Black and White',                   alt: 'Side profile portrait of Coimbatore model Raj Vishnu Kumar in a black and white shot, showcasing a stylish pony tail hair style for Men' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER SUN RAYS.JPG',caption: ' Wearing a Blue Shirt at the Fun Republic Mall',                   alt: 'India vlogger RVK Adventurer resting his chin on his hand while relaxing at Fun Republic Mall in Coimbatore, wearing a blue patterned shirt' },
-{ src: 'IMAGES/RVK ADVENTURER SIMPLE.jpeg',caption: ' Stylish Portrait Against a Green Background',                   alt: 'Tamil Nadu model Raj Vishnu Kumar standing against a green background in a casual patterned shirt, presenting a fashion stylish portrait' },
-{ src: 'IMAGES/RVK ADVENTURER STYLE.JPG',caption: ' Wearing a Classic Hat at Pothys in Coimbatore',                   alt: 'Fashion stylish India model Raj Vishnu Kumar wearing a classic hat and sleeveless hoodie while visiting Pothys in Coimbatore' },
-{ src: 'IMAGES/RVK GANDHIMANAGAR 1.jpg',caption: ' Outdoor Shoot in Gandhimanagar of Coimbatore',                   alt: 'Coimbatore vlogger RVK Adventurer looking to the side in sunglasses and a blue shirt during an outdoor shoot in Gandhimanagar, Coimbatore' },
-{ src: 'IMAGES/RVK MADURAI.jpeg',caption: ' Standing Outside the Madurai Hotel Star Residency',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar posing in a dark jacket and sunglasses outside the Madurai Hotel Star Residency' },
-{ src: 'IMAGES/RVK ADVENTURER VALANKULAM.jpg',caption: ' Ukkadam Valankulam Lake in Coimbatore',                   alt: 'India model RVK Adventurer leaning against the scenic railing at Ukkadam Valankulam Lake in Coimbatore, showcasing a relaxed and fashion stylish look' },
-{ src: 'IMAGES/A2018.jpeg',caption: ' Wearing a Green Checkered Shirt on a Blue Background',                   alt: 'Portrait of India model Raj Vishnu Kumar wearing a green checkered shirt against a blue background' },
-{ src: 'IMAGES/A2021.jpeg',caption: ' Full Beard Man Studio Portrait Style',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar showcasing a full beard man look and the best hair style for Men in a studio portrait' },
+{ src: 'IMAGES/RVK ADVENTURER SUN RAYS.JPG',    caption: ' The Fun Republic Mall at Coimbatore',                   alt: 'India vlogger RVK Adventurer resting his chin on his hand while relaxing at Fun Republic Mall in Coimbatore, wearing a blue patterned shirt' },
+{ src: 'IMAGES/RVK ADVENTURER SIMPLE.jpeg',    caption: ' Stylish Portrait Against a Green Background',                   alt: 'Tamil Nadu model Raj Vishnu Kumar standing against a green background in a casual patterned shirt, presenting a fashion stylish portrait' },
+{ src: 'IMAGES/RVK ADVENTURER STYLE.JPG',    caption: ' Wearing a Classic Hat at Pothys in Coimbatore',                   alt: 'Fashion stylish India model Raj Vishnu Kumar wearing a classic hat and sleeveless hoodie while visiting Pothys in Coimbatore' },
+{ src: 'IMAGES/RVK GANDHIMANAGAR 1.jpg',    caption: ' Outdoor Shoot in Gandhimanagar of Coimbatore',                   alt: 'Coimbatore vlogger RVK Adventurer looking to the side in sunglasses and a blue shirt during an outdoor shoot in Gandhimanagar, Coimbatore' },
+{ src: 'IMAGES/RVK MADURAI.jpeg',    caption: ' Standing Outside the Madurai Hotel Star Residency',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar posing in a dark jacket and sunglasses outside the Madurai Hotel Star Residency' },
+{ src: 'IMAGES/RVK ADVENTURER VALANKULAM.jpg',    caption: ' Ukkadam Valankulam Lake in Coimbatore',                   alt: 'India model RVK Adventurer leaning against the scenic railing at Ukkadam Valankulam Lake in Coimbatore, showcasing a relaxed and fashion stylish look' },
+{ src: 'IMAGES/A2018.jpeg',    caption: ' Green Checkered Shirt Formal Portrait',                   alt: 'Portrait of India model Raj Vishnu Kumar wearing a green checkered shirt against a blue background' },
+{ src: 'IMAGES/A2021.jpeg',    caption: ' Full Beard Man Studio Portrait Style',                   alt: 'Tamil Nadu vlogger Raj Vishnu Kumar showcasing a full beard man look and the best hair style for Men in a studio portrait' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER HARLEY DAVIDSON - 2.jpg',caption: ' Posing with a Harley Davidson at Sree Daksha Hreeva',                   alt: 'RVK Adventurer, a fashion stylish Coimbatore model, sitting on a Harley Davidson bike outside Sree Dakshas Hreeva Apartment in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER METEOR.jpg',caption: ' Riding a Meteor 350 RE Near the Perur Temple',                   alt: 'India vlogger Raj Vishnu Kumar ready to ride his Meteor 350 RE motorcycle near the scenic Perur Temple back water' },
-{ src: 'IMAGES/RVK ROYAL ENFIELD.jpeg',caption: ' Riding a Royal Enfield Classic in Sai Baba Colony',                   alt: 'Coimbatore vlogger RVK Adventurer posing on a Royal Enfield Classic 350 in Sai Baba Colony, presenting a classic motorcycle lifestyle look' },
+{ src: 'IMAGES/RVK ADVENTURER HARLEY DAVIDSON - 2.jpg',    caption: ' Posing with a Harley Davidson at Sree Daksha Hreeva',                   alt: 'RVK Adventurer, a fashion stylish Coimbatore model, sitting on a Harley Davidson bike outside Sree Dakshas Hreeva Apartment in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER METEOR.jpg',    caption: ' Riding a Meteor 350 RE Near the Perur Temple',                   alt: 'India vlogger Raj Vishnu Kumar ready to ride his Meteor 350 RE motorcycle near the scenic Perur Temple back water' },
+{ src: 'IMAGES/RVK ROYAL ENFIELD.jpeg',    caption: ' Riding a Royal Enfield Classic in Sai Baba Colony',                   alt: 'Coimbatore vlogger RVK Adventurer posing on a Royal Enfield Classic 350 in Sai Baba Colony, presenting a classic motorcycle lifestyle look' },
 
 
-{ src: 'IMAGES/RVK ADVENTURER FUN MALL.jpeg',caption: ' Standing by a Glass Railing at the Fun Republic Mall',                   alt: 'Tamil Nadu model Raj Vishnu Kumar sitting casually near the glass railing at Fun Republic Mall in Coimbatore' },
-{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 2.jpg',caption: ' Sitting by a Massive Tree Root in the Siruvani River Forest',                   alt: 'India model RVK Adventurer relaxing against a massive tree root in the Siruvani River Forest, wearing a fashion stylish green printed shirt' },
-{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 3.jpeg',caption: ' Relaxing on a Tree Root in the Kovai Kutralam Forest',                   alt: 'Coimbatore model Raj Vishnu Kumar relaxing against a massive tree root in Kovai Kutralam Forest, wearing a fashion stylish green printed shirt' },
-{ src: 'IMAGES/RVK ADVENTURER KOVAI KUTRALAM.jpeg',caption: ' Enjoying the Refreshing Kovai Kutralam Siruvani River Waters',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing in the refreshing waters of Kovai Kutralam Siruvani River, enjoying an outdoor lifestyle' },
-{ src: 'IMAGES/RVK ADVENTURER KERALA RIVER.jpeg',caption: ' Leaning on a Bridge Railing with a Travel Look in Kottathara India',                   alt: 'India model Raj Vishnu Kumar leaning on a bridge railing in Kottathara, India, presenting a fashion stylish travel look in an open checkered shirt' },
-{ src: 'IMAGES/RVK ADVENTURER KOTHAGIRI.jpeg',caption: ' Taking a Road Trip Through Kothagiri in the Nilgiris',                   alt: 'Coimbatore vlogger RVK Adventurer resting on his motorcycle during a road trip through Kothagiri, Nilgiris, showcasing a fashion stylish rider outfit' },
-{ src: 'IMAGES/RVK ADVENTURER MODELLING.jpeg',caption: ' Presenting a Casual Red Cap and Stylish Hoodie',                   alt: 'A dual portrait of India vlogger Raj Vishnu Kumar adjusting his red cap, highlighting a casual and fashion stylish hoodie' },
-{ src: 'IMAGES/RVK ADVENTURER DIWALI CELEB 2019.jpg',caption: ' Wearing a Red Patterned Shirt Near Green Foliage',                   alt: 'Tamil Nadu model RVK Adventurer standing outdoors near green foliage, wearing a fashion stylish red patterned shirt and showcasing the best hair style for Men' },
-{ src: 'IMAGES/RVK TWINS.jpg',caption: ' Dark Jacket Collage Showing Thick Curls',                   alt: 'Side profile collage of fashion stylish Coimbatore model Raj Vishnu Kumar looking over his shoulder in a dark jacket, highlighting his thick curls and the best hair style for Men' },
-{ src: 'IMAGES/RVK ADVENTURER CHITHIRAI CHAVADI.jpeg',caption: 'Chithirai Chavadi Anaicut in Coimbatore',                   alt: 'India vlogger Raj Vishnu Kumar sitting near the cascading waters of Chithirai Chavadi Anaicut in Coimbatore, presenting a rugged outdoor look' },
-{ src: 'IMAGES/RVK ADVENTURER DENIM - 1.jpg',caption: ' Sitting on a Bench at Curio Garden in Navavoor Pirivu',                   alt: 'Coimbatore model RVK Adventurer relaxing on a bench at Curio Garden in Navavoor Pirivu, Vadavalli, wearing a fashion stylish blue patterned shirt' },
-{ src: 'IMAGES/RVK ADVENTURER DENIM - 2.jpg',caption: ' Relaxing on the Green Grass at Curio Garden in Vadavalli',                   alt: 'Tamil Nadu model Raj Vishnu Kumar lounging on the green grass at Curio Garden in Navavoor Pirivu, Vadavalli, showcasing a relaxed and fashion stylish pose' },
-{ src: 'IMAGES/RVK ADVENTURER DENIM - 3.jpg',caption: ' Sitting on the Lawn at Curio Garden in Coimbatore',                   alt: 'India model RVK Adventurer resting on the lawn at Curio Garden in Navavoor Pirivu, Coimbatore, highlighting the best hair style for Men in a beautiful outdoor setting' },
-{ src: 'IMAGES/RVK ADVENTURER SIRUVANI RIVER BED.jpeg',caption: ' Wearing a Bright Red Hoodie by a Coimbatore Village River',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar sitting thoughtfully by a scenic Coimbatore village river, wearing a bright red hoodie' },
+{ src: 'IMAGES/RVK ADVENTURER FUN MALL.jpeg',    caption: ' Sitting by a Glass Railing at the Fun Republic Mall',                   alt: 'Tamil Nadu model Raj Vishnu Kumar sitting casually near the glass railing at Fun Republic Mall in Coimbatore' },
+{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 2.jpg',    caption: ' Lying on a Massive Tree Root in the Siruvani River Forest',                   alt: 'India model RVK Adventurer relaxing against a massive tree root in the Siruvani River Forest, wearing a fashion stylish green printed shirt' },
+{ src: 'IMAGES/RVK ADVENTURER GREEN MASS - 3.jpeg',    caption: ' Relaxing on a Tree Root in the Kovai Kutralam Forest',                   alt: 'Coimbatore model Raj Vishnu Kumar relaxing against a massive tree root in Kovai Kutralam Forest, wearing a fashion stylish green printed shirt' },
+{ src: 'IMAGES/RVK ADVENTURER KOVAI KUTRALAM.jpeg',    caption: ' Enjoying the Refreshing Kovai Kutralam Siruvani River Waters',                   alt: 'Tamil Nadu vlogger RVK Adventurer standing in the refreshing waters of Kovai Kutralam Siruvani River, enjoying an outdoor lifestyle' },
+{ src: 'IMAGES/RVK ADVENTURER KERALA RIVER.jpeg',    caption: ' Leaning on a Bridge Railing with a Travel Look in Kottathara India',                   alt: 'India model Raj Vishnu Kumar leaning on a bridge railing in Kottathara, India, presenting a fashion stylish travel look in an open checkered shirt' },
+{ src: 'IMAGES/RVK ADVENTURER KOTHAGIRI.jpeg',    caption: ' Taking a Road Trip Through Kothagiri in the Nilgiris',                   alt: 'Coimbatore vlogger RVK Adventurer resting on his motorcycle during a road trip through Kothagiri, Nilgiris, showcasing a fashion stylish rider outfit' },
+{ src: 'IMAGES/RVK ADVENTURER MODELLING.jpeg',    caption: ' Presenting a Casual Red Cap and Stylish Hoodie',                   alt: 'A dual portrait of India vlogger Raj Vishnu Kumar adjusting his red cap, highlighting a casual and fashion stylish hoodie' },
+{ src: 'IMAGES/RVK ADVENTURER DIWALI CELEB 2019.jpg',    caption: ' Wearing a Red Patterned Shirt Near Green Foliage',                   alt: 'Tamil Nadu model RVK Adventurer standing outdoors near green foliage, wearing a fashion stylish red patterned shirt and showcasing the best hair style for Men' },
+{ src: 'IMAGES/RVK TWINS.jpg',    caption: ' Dark Jacket Collage Showing Thick Curls',                   alt: 'Side profile collage of fashion stylish Coimbatore model Raj Vishnu Kumar looking over his shoulder in a dark jacket, highlighting his thick curls and the best hair style for Men' },
+{ src: 'IMAGES/RVK ADVENTURER CHITHIRAI CHAVADI.jpeg',    caption: 'Chithirai Chavadi Anaicut in Coimbatore',                   alt: 'India vlogger Raj Vishnu Kumar sitting near the cascading waters of Chithirai Chavadi Anaicut in Coimbatore, presenting a rugged outdoor look' },
+{ src: 'IMAGES/RVK ADVENTURER DENIM - 1.jpg',    caption: ' Sitting on a Bench at Curio Garden in Navavoor Pirivu',                   alt: 'Coimbatore model RVK Adventurer relaxing on a bench at Curio Garden in Navavoor Pirivu, Vadavalli, wearing a fashion stylish blue patterned shirt' },
+{ src: 'IMAGES/RVK ADVENTURER DENIM - 2.jpg',    caption: ' Relaxing on the Green Grass at Curio Garden in Vadavalli',                   alt: 'Tamil Nadu model Raj Vishnu Kumar lounging on the green grass at Curio Garden in Navavoor Pirivu, Vadavalli, showcasing a relaxed and fashion stylish pose' },
+{ src: 'IMAGES/RVK ADVENTURER DENIM - 3.jpg',    caption: ' Sitting on the Lawn at Curio Garden in Coimbatore',                   alt: 'India model RVK Adventurer resting on the lawn at Curio Garden in Navavoor Pirivu, Coimbatore, highlighting the best hair style for Men in a beautiful outdoor setting' },
+{ src: 'IMAGES/RVK ADVENTURER SIRUVANI RIVER BED.jpeg',    caption: ' Coimbatore Village River',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar sitting thoughtfully by a scenic Coimbatore village river, wearing a bright red hoodie' },
 
 
-{ src: 'IMAGES/RVK CYCLE.jpg',caption: ' Showcasing an Edgy Style With a Hercules Matrix Cycle',                   alt: 'Tamil Nadu vlogger RVK Adventurer posing with his Hercules Matrix Cycle, wearing a red shirt and bandana for an edgy, fashion stylish look' },
-{ src: 'IMAGES/RVK ADVENTURER 2 WHEELED FRIENDS.jpeg',caption: ' Posing with a Hercules Matrix Cycle and an FZ V3',                   alt: 'India model Raj Vishnu Kumar crouching confidently between a Hercules Matrix Cycle and an FZ V3 Dark Knight bike, showcasing a fashion stylish urban vibe' },
-{ src: 'IMAGES/RVK ADVENTURER STYLISH BIKE.jpeg',caption: ' Lounging on an FZ V3 Dark Knight',                   alt: 'Coimbatore model Raj Vishnu Kumar lounging on his FZ V3 Dark Knight bike, showcasing a fashion stylish look with sunglasses' },
-{ src: 'IMAGES/RVK ADVENTURER V3 FZ DARK KNIGHT.jpeg',caption: ' Sitting Sideways on an FZ V3 Dark Knight',                   alt: 'India vlogger RVK Adventurer posing sideways on his new FZ V3 Dark Knight bike in an open field, wearing a fashion stylish dark shirt' },
-{ src: 'IMAGES/RVK ADVENTURER FZ V3 NEW BIKE.jpeg',caption: ' Posing Confidently on an FZ V3 Dark Knight',                   alt: 'Tamil Nadu model Raj Vishnu Kumar sitting confidently on his FZ V3 Dark Knight bike, presenting a rugged outdoor look' },
-{ src: 'IMAGES/RVK ADVENTURER NEW BIKE FIRST RIDE.jpg',caption: ' Riding an FZ V3 Dark Knight in Ooty',                   alt: 'RVK Adventurer, a fashion stylish India model, taking a road trip on his FZ V3 Dark Knight bike at Ooty in a warm jacket' },
-{ src: 'IMAGES/RVK WHITE - 9.jpg',caption: ' Resting on an FZ V3 Dark Knight',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar resting on his FZ V3 Dark Knight bike, highlighting the best hair style for Men and a crisp white shirt' },
-{ src: 'IMAGES/RVK WHITE - 6.jpg',caption: ' Standing with an FZ V3 Dark Knight',                   alt: 'Tamil Nadu vlogger RVK Adventurer looking to the side while standing with his FZ V3 Dark Knight bike, wearing a fashion stylish white shirt and red pants' },
-{ src: 'IMAGES/FZ DARK KNIGHT MASS.jpeg',caption: ' Relaxing with Legs Up on an FZ V3 Dark Knight',                   alt: 'India model Raj Vishnu Kumar relaxing with his legs up on his FZ V3 Dark Knight bike, presenting a fashion stylish travel vibe in a white overshirt' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 4.jpg',caption: ' Showcasing a Yamaha FZ V3 Dark Knight Style',                   alt: 'Coimbatore model Raj Vishnu Kumar sitting sideways on his Yamaha FZ V3 Dark Knight bike, wearing a fashion stylish white shirt and sunglasses in an open field' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 5.jpg',caption: ' Posing on an FZ V3 Dark Knight by Yamaha',                   alt: 'India vlogger RVK Adventurer posing confidently on a FZ V3 Dark Knight bike by Yamaha, showcasing a fashion stylish look in a white shirt' },
-{ src: 'IMAGES/RVK ADVENTURER BIKE.jpeg',caption: ' With an FZ V3 Dark Knight at Kava Island',                   alt: 'Tamil Nadu model Raj Vishnu Kumar relaxing on the ground next to his FZ V3 Dark Knight bike at the scenic Kava Island, Kerala' },
-{ src: 'IMAGES/RVK ADVENTURER KAVAISLAND.jpeg',caption: ' With an FZ V3 Dark Knight in Kerala Kava',                   alt: 'Side profile of India model RVK Adventurer sitting on an FZ V3 Dark Knight bike, looking out over the water at Kava Island in Kerala' },
-{ src: 'IMAGES/RVK ADVENTURER DAM BIKE SHOOT.jpeg',caption: ' Visiting Kava Island on an FZ V3 Dark Knight',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar posing on his FZ V3 Dark Knight bike with the beautiful water and hills of Kava Island, Kerala in the background' },
-{ src: 'IMAGES/RVK ADVENTURER NELLITHURAI.jpeg',caption: ' Sitting by a TVS Star City in Nellithurai Coimbatore',                   alt: 'India vlogger Raj Vishnu Kumar sitting on the ground leaning against a TVS Star City motorcycle in Nellithurai, Coimbatore, wearing a casual blue shirt' },
-{ src: 'IMAGES/HARLEY DAVISON RVK ADVENTURER.jpg',caption: ' Posing by a Harley Davidson Outside Hreeva Apartments',                   alt: 'Coimbatore model RVK Adventurer posing on a black Harley Davidson motorcycle outside Hreeva Apartments, wearing a fashion stylish red and blue hoodie' },
-{ src: 'IMAGES/RVK ADVENTURER HARLEY DAVIDSON.jpg',caption: ' Sitting on a Harley Davidson Bike at Hreeva Apartments',                   alt: 'Tamil Nadu model Raj Vishnu Kumar sitting confidently on a Harley Davidson bike at Hreeva Apartments, presenting a fashion stylish rider look' },
-{ src: 'IMAGES/RVK ADVENTURER BLACK CYCLE.jpg',caption: ' BTWIN Cycle from Decathlon Coimbatore',                   alt: 'India model Raj Vishnu Kumar posing on a BTWIN Cycle by Decathlon outdoors, showcasing a casual and fashion stylish cycling outfit' },
-{ src: 'IMAGES/RVK ADVENTURER CODDISSIA.jpeg',caption: ' Royal Enfield 350 Classic Red Style',                   alt: 'RVK Adventurer, a fashion stylish Coimbatore model, resting on a Royal Enfield 350 Classic Red motorcycle near a beautiful flowering tree' }
+{ src: 'IMAGES/RVK CYCLE.jpg',    caption: ' Showcasing an Edgy Style With a Hercules Matrix Cycle',                   alt: 'Tamil Nadu vlogger RVK Adventurer posing with his Hercules Matrix Cycle, wearing a red shirt and bandana for an edgy, fashion stylish look' },
+{ src: 'IMAGES/RVK ADVENTURER 2 WHEELED FRIENDS.jpeg',    caption: ' Posing with a Hercules Matrix Cycle and an FZ V3 Dark Knight Bike',                   alt: 'India model Raj Vishnu Kumar crouching confidently between a Hercules Matrix Cycle and an FZ V3 Dark Knight bike, showcasing a fashion stylish urban vibe' },
+{ src: 'IMAGES/RVK ADVENTURER STYLISH BIKE.jpeg',    caption: ' Lounging on an FZ V3 Dark Knight',                   alt: 'Coimbatore model Raj Vishnu Kumar lounging on his FZ V3 Dark Knight bike, showcasing a fashion stylish look with sunglasses' },
+{ src: 'IMAGES/RVK ADVENTURER V3 FZ DARK KNIGHT.jpeg',    caption: ' Sitting Sideways on an FZ V3 Dark Knight',                   alt: 'India vlogger RVK Adventurer posing sideways on his new FZ V3 Dark Knight bike in an open field, wearing a fashion stylish dark shirt' },
+{ src: 'IMAGES/RVK ADVENTURER FZ V3 NEW BIKE.jpeg',    caption: ' Posing Confidently on an FZ V3 Dark Knight',                   alt: 'Tamil Nadu model Raj Vishnu Kumar sitting confidently on his FZ V3 Dark Knight bike, presenting a rugged outdoor look' },
+{ src: 'IMAGES/RVK ADVENTURER NEW BIKE FIRST RIDE.jpg',    caption: ' Posing with FZ V3 Dark Knight in Ooty',                   alt: 'RVK Adventurer, a fashion stylish India model, taking a road trip on his FZ V3 Dark Knight bike at Ooty in a warm jacket' },
+{ src: 'IMAGES/RVK WHITE - 9.jpg',    caption: ' Resting on an FZ V3 Dark Knight',                   alt: 'Coimbatore vlogger Raj Vishnu Kumar resting on his FZ V3 Dark Knight bike, highlighting the best hair style for Men and a crisp white shirt' },
+{ src: 'IMAGES/RVK WHITE - 6.jpg',    caption: ' FZ V3 Dark Knight Bike',                   alt: 'Tamil Nadu vlogger RVK Adventurer looking to the side while standing with his FZ V3 Dark Knight bike, wearing a fashion stylish white shirt and red pants' },
+{ src: 'IMAGES/FZ DARK KNIGHT MASS.jpeg',    caption: ' Rugged Stylish Pose on the FZ V3 Dark Knight Bike',                   alt: 'India model Raj Vishnu Kumar relaxing with his legs up on his FZ V3 Dark Knight bike, presenting a fashion stylish travel vibe in a white overshirt' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 4.jpg',    caption: ' Showcasing a Yamaha FZ V3 Dark Knight Style',                   alt: 'Coimbatore model Raj Vishnu Kumar sitting sideways on his Yamaha FZ V3 Dark Knight bike, wearing a fashion stylish white shirt and sunglasses in an open field' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE PHOTOSHOOT - 5.jpg',    caption: ' FZ V3 Dark Knight by Yamaha',                   alt: 'India vlogger RVK Adventurer posing confidently on a FZ V3 Dark Knight bike by Yamaha, showcasing a fashion stylish look in a white shirt' },
+{ src: 'IMAGES/RVK ADVENTURER BIKE.jpeg',    caption: ' With an FZ V3 Dark Knight at Kava Island',                   alt: 'Tamil Nadu model Raj Vishnu Kumar relaxing on the ground next to his FZ V3 Dark Knight bike at the scenic Kava Island, Kerala' },
+{ src: 'IMAGES/RVK ADVENTURER KAVAISLAND.jpeg',    caption: ' With an FZ V3 Dark Knight in Kerala Kava Island',                   alt: 'Side profile of India model RVK Adventurer sitting on an FZ V3 Dark Knight bike, looking out over the water at Kava Island in Kerala' },
+{ src: 'IMAGES/RVK ADVENTURER DAM BIKE SHOOT.jpeg',    caption: ' Visiting Kava Island on an FZ V3 Dark Knight',                   alt: 'Fashion stylish Coimbatore vlogger Raj Vishnu Kumar posing on his FZ V3 Dark Knight bike with the beautiful water and hills of Kava Island, Kerala in the background' },
+{ src: 'IMAGES/RVK ADVENTURER NELLITHURAI.jpeg',    caption: ' Sitting by a TVS Star City in Nellithurai Coimbatore',                   alt: 'India vlogger Raj Vishnu Kumar sitting on the ground leaning against a TVS Star City motorcycle in Nellithurai, Coimbatore, wearing a casual blue shirt' },
+{ src: 'IMAGES/HARLEY DAVISON RVK ADVENTURER.jpg',    caption: ' Posing by a Harley Davidson Outside Hreeva Apartments',                   alt: 'Coimbatore model RVK Adventurer posing on a black Harley Davidson motorcycle outside Hreeva Apartments, wearing a fashion stylish red and blue hoodie' },
+{ src: 'IMAGES/RVK ADVENTURER HARLEY DAVIDSON.jpg',    caption: ' Sitting on a Harley Davidson Bike at Hreeva Apartments',                   alt: 'Tamil Nadu model Raj Vishnu Kumar sitting confidently on a Harley Davidson bike at Hreeva Apartments, presenting a fashion stylish rider look' },
+{ src: 'IMAGES/RVK ADVENTURER BLACK CYCLE.jpg',    caption: ' BTWIN Cycle from Decathlon Coimbatore',                   alt: 'India model Raj Vishnu Kumar posing on a BTWIN Cycle by Decathlon outdoors, showcasing a casual and fashion stylish cycling outfit' },
+{ src: 'IMAGES/RVK ADVENTURER CODDISSIA.jpeg',    caption: ' Royal Enfield 350 Classic Red',                   alt: 'RVK Adventurer, a fashion stylish Coimbatore model, resting on a Royal Enfield 350 Classic Red motorcycle near a beautiful flowering tree' }
 
 
 
@@ -763,7 +789,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 
   function setLightboxImage(index) {
     const data = GALLERY_IMAGES[index];
-    lbImg.src        = data.src.replace('w=800', 'w=1400');
+    lbImg.src        = data.src;
     lbImg.alt        = data.alt;
     lbCaption.textContent = data.caption;
   }

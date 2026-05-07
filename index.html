@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
 
-<title>RVK ADVENTURER'S Gallery</title>
+<title>RVK ADVENTURER'S GALLERY</title>
   
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 <title>RVK Adventurer Gallery | Raj Vishnu Kumar - Model & Vlogger</title>
 <meta name="title" content="RVK Adventurer Gallery | Raj Vishnu Kumar - Model & Vlogger">
-<meta name="description" content="Explore the official photo gallery of Raj Vishnu Kumar (RVK Adventurer). Coimbatore fashion model, YouTuber, digital marketer, and nature travel lover.">
-<meta name="keywords" content="Raj Vishnu Kumar, RVK Adventurer, Coimbatore fashion model, Tamil Nadu vlogger, digital marketer, website developer, cyclist, data analyst, photography portfolio, photo gallery"> 
+<meta name="description" content="Explore The Official Photo Gallery of Raj Vishnu Kumar (RVK Adventurer). Coimbatore Fashion Model, YouTuber, Digital Marketer and Nature Travel Lover.">
+<meta name="keywords" content="Raj Vishnu Kumar, RVK Adventurer, Coimbatore Fashion Model, Tamil Nadu Vlogger, Digital Marketer, Website Developer, Cyclist, Data and Business Analyst, Photography Portfolio, Photo Gallery"> 
 <meta name="author" content="Raj Vishnu Kumar">
 <meta name="robots" content="index, follow">
 <meta name="language" content="English">
@@ -22,7 +22,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rvk-adventurer.github.io/">
 <meta property="og:title" content="Raj Vishnu Kumar's Gallery">
-<meta property="og:description" content="Explore the official photo gallery of Raj Vishnu Kumar (RVK Adventurer). Coimbatore fashion model, YouTuber, digital marketer and nature travel lover.">
+<meta property="og:description" content="Explore The Official Photo Gallery of Raj Vishnu Kumar (RVK Adventurer). Coimbatore Fashion Model, YouTuber, Digital Marketer and Nature Travel Lover.">
 <meta property="og:image" content="https://rvk-adventurer.github.io/LOGO/RVK-ADVENTURER.png">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1080">
@@ -39,7 +39,7 @@
   "@context": "https://schema.org",
   "@type": "ImageGallery",
   "name": "RVK Adventurer's Gallery",
-  "url": "[https://rvk-adventurer.github.io/]",
+  "url": "https://rvk-adventurer.github.io/",
   "description": "The official photography portfolio and gallery of Raj Vishnu Kumar, showcasing his modeling, travel and lifestyle.",
   "about": {
     "@type": "Person",
@@ -742,11 +742,10 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
       item.setAttribute('aria-label', img.alt);
       item.dataset.index = index;
 
-      item.innerHTML = `
+
+
+item.innerHTML = `
         <img src="${img.src}" alt="${img.alt}" loading="${index < 8 ? 'eager' : 'lazy'}" />
-        <div class="gallery-item-overlay">
-          <span class="gallery-item-caption"></span>
-        </div>
         <div class="gallery-item-zoom" aria-hidden="true">
           <svg viewBox="0 0 24 24">
             <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -754,6 +753,10 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
           </svg>
         </div>
       `;
+
+
+
+
 
       item.addEventListener('click',  () => openLightbox(index));
       item.addEventListener('keydown', (e) => {
@@ -793,7 +796,7 @@ footer { background: var(--clr-surface); border-top: 1px solid var(--clr-border)
 
   function setLightboxImage(index) {
     const data = GALLERY_IMAGES[index];
-    lbImg.src        = data.src;
+    lbImg.src        = data.src.replace('w=800', 'w=1400');
     lbImg.alt        = data.alt;
     lbCaption.textContent = data.caption;
   }

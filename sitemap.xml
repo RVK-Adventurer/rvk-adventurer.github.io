@@ -9,12 +9,16 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 
   <url>
     <loc>https://rvk-adventurer.github.io/</loc>
-    <lastmod>2026-06-10T12:00:00+00:00</lastmod>
+    <lastmod>2026-09-16T12:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
 
 
 <image:image>
+      <image:loc>https://rvk-adventurer.github.io/IMAGES/Vishnu Strange.png</image:loc>
+      <image:title>Professional Skills of Raj Vishnu Kumar AKA RVK Adventurer</image:title>
+      <image:caption>Raj Vishnu Kumar (RVK Adventurer) showcasing his multiple skills in an AI-generated action portrait </image:caption>
+    </image:image>
       <image:loc>https://rvk-adventurer.github.io/IMAGES/வாழ்கையின்%20சாகசகாரன்.png</image:loc>
       <image:title>கோயம்புத்தூர் மற்றும் இந்தியா ஃபேஷன் மாடல் ராஜ் விஷ்ணு குமார்</image:title>
       <image:caption>ஸ்டைலிஷ் ஃபேஷன் மாடல் மற்றும் இந்தியா வ்லாகர் ராஜ் விஷ்ணு குமார் (RVK Adventurer) வெள்ளை நிறச் சட்டை மற்றும் கூலிங் கிளாஸ் அணிந்து அமர்ந்திருக்கும் புகைப்படம் </image:caption>
